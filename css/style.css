@@ -382,11 +382,11 @@ ul, ol { list-style: none; }
 
 @media (max-width: 950px) {
   .nav-menu {
-    position: fixed;
-    top: var(--nav-height);
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    bottom: 0;
+    height: calc(100vh - var(--nav-height));
     background: var(--bg-primary);
     flex-direction: column;
     justify-content: flex-start;

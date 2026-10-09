@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maharashtra • Unity in Diversity 2026 | Department of Artificial Intelligence & Data Science</title>
+  <meta name="description"
+    content="Official cultural and technical exhibition web portal for Maharashtra. Presented by the Department of Artificial Intelligence & Data Science for Unity in Diversity 2026.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Leaflet CSS for Real Interactive Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Chart.js CDN for Analytics Dashboard -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Leaflet JS for Real Interactive Map -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body data-lang="en">
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- STREAMLINED, UNCLUTTERED NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Non-wrapping Brand Lockup -->
+      <a href="#hero" class="nav-brand" aria-label="Maharashtra Home">
+        <div class="brand-icon">
+          <!-- Maratha Fort / Seal SVG Icon -->
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 2v20M4 4l16 4-16 4" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title" data-i18n="nav.title">MAHARASHTRA</span>
+          <span class="brand-subtitle" data-i18n="nav.dept">AI & Data Science</span>
+        </div>
+      </a>
+
+      <!-- Clean Centered Nav Links -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <a href="#glance" class="nav-link" data-i18n="nav.overview">Overview</a>
+        <a href="#history" class="nav-link" data-i18n="nav.history">History</a>
+        <a href="#people" class="nav-link" data-i18n="nav.people">People</a>
+        <a href="#culture" class="nav-link" data-i18n="nav.culture">Culture</a>
+        <a href="#food" class="nav-link" data-i18n="nav.food">Cuisine</a>
+        <a href="#tourism" class="nav-link" data-i18n="nav.tourism">Tourism</a>
+        <a href="#economy" class="nav-link" data-i18n="nav.economy">Economy</a>
+        <a href="#engineering" class="nav-link" data-i18n="nav.engineering">Engineering & AI</a>
+        <a href="#quiz" class="nav-link" data-i18n="nav.quiz">Quiz</a>
+        <a href="#stall" class="nav-link" data-i18n="nav.stall">Our Stall</a>
+      </nav>
+
+      <!-- Clean Action Controls -->
+      <div class="nav-actions">
+        <!-- Language Switcher Pill -->
+        <button class="pill-btn" id="langToggle" aria-label="Toggle Language" title="Switch Language">
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path
+              d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span id="langText">मराठी</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="theme-icon-btn" id="themeToggle" aria-label="Toggle Theme" title="Switch Theme">
+          <svg class="svg-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              stroke="currentColor" stroke-width="2" fill="none" />
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION WITH CHHATRAPATI SHIVAJI MAHARAJ SHOWCASE -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Typography & Action Buttons -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="dot"></span>
+              <span data-i18n="hero.badge">Unity in Diversity 2026 • AI & Data Science Department</span>
+            </div>
+            <h1>
+              <span data-i18n="hero.titlePrefix">Maharashtra</span>:
+              <span class="highlight" data-i18n="hero.titleHighlight">Maza Maharashtra</span>
+            </h1>
+            <p class="tagline" data-i18n="hero.tagline">
+              Jai Maharashtra — Land of Forts, Saints, Revolutionaries, and Limitless Modern Innovation
+            </p>
+
+            <!-- Highlights Strip -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">1 May 1960</span>
+                <span class="stat-label" data-i18n="hero.statFormation">Statehood Day</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">Mumbai</span>
+                <span class="stat-label" data-i18n="hero.statCapital">Capital (Financial Hub)</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">Nagpur</span>
+                <span class="stat-label" data-i18n="hero.statWinterCapital">Winter Capital</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number counter-val" data-target="36" data-suffix="">0</span>
+                <span class="stat-label" data-i18n="hero.statDistricts">Districts</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number counter-val" data-target="11.2" data-suffix=" Cr">0</span>
+                <span class="stat-label" data-i18n="hero.statPopulation">Population</span>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#glance" class="btn btn-primary" data-i18n="hero.exploreBtn">
+                Explore Maharashtra
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#stall" class="btn btn-outline" data-i18n="hero.stallBtn">
+                Visit Our Stall
+              </a>
+              <a href="#quiz" class="btn btn-outline" data-i18n="hero.quizBtn">
+                Play State Quiz
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Chhatrapati Shivaji Maharaj Majestic Portrait -->
+          <div class="hero-portrait-card">
+            <div class="portrait-inner">
+              <img src="images/shivaji-maharaj.png" alt="Chhatrapati Shivaji Maharaj portrait" class="portrait-img">
+              <div class="portrait-overlay">
+                <div class="portrait-badge">
+                  <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor" style="width: 14px; height: 14px;">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <span>Chhatrapati Shivaji Maharaj</span>
+                </div>
+                <div class="portrait-title" data-i18n="hero.portraitTitle">छत्रपती शिवाजी महाराज</div>
+                <div class="portrait-sub" data-i18n="hero.portraitSubtitle">Founder of Hindavi Swarajya (1630–1680)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. MAHARASHTRA AT A GLANCE (WITH REAL INTERACTIVE MAP) -->
+    <section id="glance">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="glance.title">Maharashtra at a Glance</h2>
+          <p data-i18n="glance.subtitle">Geographic grandeur, administrative hubs, and iconic natural symbols defining
+            the powerhouse state of India.</p>
+        </div>
+
+        <!-- Key Facts Grid -->
+        <div class="card-grid"
+          style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-bottom: var(--space-xl);">
+          <div class="icon-card">
+            <div class="icon-box">
+              <svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 21h18M3 10h18M5 10v11M9 10v11M15 10v11M19 10v11M12 2l10 8H2l10-8z" />
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="glance.capital">Capital</h4>
+              <p data-i18n="glance.capitalVal">Mumbai (Financial Hub)</p>
+            </div>
+          </div>
+
+          <div class="icon-card">
+            <div class="icon-box">
+              <svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="glance.winterCapital">Winter Capital</h4>
+              <p data-i18n="glance.winterCapitalVal">Nagpur</p>
+            </div>
+          </div>
+
+          <div class="icon-card">
+            <div class="icon-box">
+              <svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="glance.formation">Formation Day</h4>
+              <p data-i18n="glance.formationVal">1 May 1960</p>
+            </div>
+          </div>
+
+          <div class="icon-card">
+            <div class="icon-box">
+              <svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="glance.area">Geographic Area</h4>
+              <p data-i18n="glance.areaVal">307,713 sq km (3rd in India)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Official State Symbols -->
+        <h3 style="margin-bottom: var(--space-md); color: var(--orange-primary); text-align: center;"
+          data-i18n="glance.symbolsTitle">Official State Symbols</h3>
+        <div class="symbols-grid mb-2xl">
+          <div class="icon-card">
+            <img src="images/symbol-shekru.jpg" alt="Shekru"
+              style="width: 52px; height: 52px; border-radius: var(--radius-full); object-fit: cover; border: 2px solid var(--orange-primary); flex-shrink: 0;">
+            <div>
+              <h4 data-i18n="glance.symbolAnimal">State Animal</h4>
+              <p data-i18n="glance.symbolAnimalName">Shekru (Indian Giant Squirrel)</p>
+            </div>
+          </div>
+
+          <div class="icon-card">
+            <img src="images/symbol-harial.jpg" alt="Harial"
+              style="width: 52px; height: 52px; border-radius: var(--radius-full); object-fit: cover; border: 2px solid var(--orange-primary); flex-shrink: 0;">
+            <div>
+              <h4 data-i18n="glance.symbolBird">State Bird</h4>
+              <p data-i18n="glance.symbolBirdName">Harial (Yellow-Footed Green Pigeon)</p>
+            </div>
+          </div>
+
+          <div class="icon-card">
+            <img src="images/symbol-mango.jpg" alt="Mango"
+              style="width: 52px; height: 52px; border-radius: var(--radius-full); object-fit: cover; border: 2px solid var(--orange-primary); flex-shrink: 0;">
+            <div>
+              <h4 data-i18n="glance.symbolTree">State Tree</h4>
+              <p data-i18n="glance.symbolTreeName">Mango (Hapus / Alphonso)</p>
+            </div>
+          </div>
+
+          <div class="icon-card">
+            <img src="images/symbol-jarul.jpg" alt="Jarul"
+              style="width: 52px; height: 52px; border-radius: var(--radius-full); object-fit: cover; border: 2px solid var(--orange-primary); flex-shrink: 0;">
+            <div>
+              <h4 data-i18n="glance.symbolFlower">State Flower</h4>
+              <p data-i18n="glance.symbolFlowerName">Jarul (Taman)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- REAL INTERACTIVE MAP (LEAFLET + CARTODB GOOGLE MAP STYLE) -->
+        <div class="real-map-wrapper">
+          <div class="map-toolbar">
+            <div class="map-toolbar-title">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="var(--orange-primary)" stroke-width="2">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+              </svg>
+              <span data-i18n="glance.mapTitle">Interactive Regional Map (Cartographic View)</span>
+            </div>
+
+            <!-- Region Selector Pills -->
+            <div class="region-pills">
+              <button class="region-pill active" data-map-region="all">All Maharashtra</button>
+              <button class="region-pill" data-map-region="konkan">Konkan</button>
+              <button class="region-pill" data-map-region="desh">Western MH (Desh)</button>
+              <button class="region-pill" data-map-region="north_mh">North MH (Nashik)</button>
+              <button class="region-pill" data-map-region="khandesh">Khandesh</button>
+              <button class="region-pill" data-map-region="marathwada">Marathwada</button>
+              <button class="region-pill" data-map-region="vidarbha">Vidarbha</button>
+            </div>
+
+            <!-- Satellite View Toggle Button -->
+            <button class="pill-btn" id="mapLayerToggle" style="margin-left: auto;">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+              <span>Satellite View</span>
+            </button>
+          </div>
+
+          <!-- Real Map Container -->
+          <div id="realMap"></div>
+
+          <!-- Regional Information Panel -->
+          <div class="map-details-box">
+            <div>
+              <span class="map-details-badge" id="mapDetailBadge">6 Administrative Divisions • 36 Districts</span>
+              <h3 id="mapDetailTitle" style="color: var(--orange-primary); font-size: 1.25rem;">All Maharashtra Regions
+              </h3>
+            </div>
+            <div>
+              <p id="mapDetailDistricts"
+                style="font-weight: 600; font-size: 0.85rem; color: var(--orange-peach); margin-bottom: 4px;">
+                Covering Konkan, Western Maharashtra (Desh), Khandesh, Marathwada, and Vidarbha.
+              </p>
+              <p id="mapDetailDesc" style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+                Click any region pill above or tap the interactive map polygons directly to inspect each zone's unique
+                geography, culture, and district profile.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rivers & Sahyadri -->
+        <div class="card mt-xl">
+          <h4 style="color: var(--orange-amber); margin-bottom: 6px;" data-i18n="glance.riversTitle">Rivers & Western
+            Ghats (Sahyadri)</h4>
+          <p data-i18n="glance.riversDesc">The mighty Western Ghats run along the coast, nurturing lifeline rivers
+            including Godavari, Krishna, Bhima, Tapi, Koyna, and Wainganga.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. HISTORY -->
+    <section id="history" style="background: var(--bg-surface-alt);">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="history.title">Glorious Historical Odyssey</h2>
+          <p data-i18n="history.subtitle">From ancient cave excavations and Maratha Swarajya to the Indian Independence
+            Struggle and statehood.</p>
+        </div>
+
+        <!-- Vertical Timeline -->
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="year">230 BCE – 220 CE</div>
+            <h4>Satavahana Dynasty</h4>
+            <p>Ruled from Pratishthana (Paithan), patronized rock-cut Buddhist architecture at Karla, Bhaja, and Ajanta
+              caves, and established maritime trade networks.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">6th – 12th Century CE</div>
+            <h4>Chalukyas, Rashtrakutas & Yadavas</h4>
+            <p>Golden era of temple architecture including the monolithic Kailash Temple at Ellora; Yadavas ruled from
+              Devagiri (Daulatabad), cultivating early Marathi literature.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">1630 – 1680 CE</div>
+            <h4>Chhatrapati Shivaji Maharaj & Hindavi Swarajya</h4>
+            <p>Establishment of 'Hindavi Swarajya', guerrilla warfare (Ganimi Kawa), indigenous navy, and formal
+              coronation as Chhatrapati at Raigad in 1674.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">1680 – 1707 CE</div>
+            <h4>Chhatrapati Sambhaji & War of Independence</h4>
+            <p>Chhatrapati Sambhaji Maharaj and Maharani Tarabai fought a fierce 27-year war of resistance against
+              Mughal armies across the Sahyadri ranges.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">18th Century CE</div>
+            <h4>Maratha Confederacy & Peshwa Era</h4>
+            <p>Expansion of the Maratha Empire under Peshwa Bajirao I across northern, central, and southern India,
+              establishing Pune as the political powerhouse.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">1885 – 1947 CE</div>
+            <h4>Indian Freedom Struggle</h4>
+            <p>Epicenter of nationalism led by Lokmanya Tilak, Mahatma Gandhi launching 'Quit India' from Gowalia Tank
+              (Mumbai in 1942), and social renaissance movements.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">1956 – 1960 CE</div>
+            <h4>Samyukta Maharashtra Movement & 1 May 1960</h4>
+            <p>Unification of all Marathi-speaking areas championed by 106 Martyrs (Hutatma Smarak). Official
+              establishment of the State of Maharashtra on 1 May 1960.</p>
+          </div>
+        </div>
+
+        <!-- Forts Carousel -->
+        <div class="mt-3xl">
+          <h3 style="text-align: center; margin-bottom: var(--space-xs);" data-i18n="history.fortsTitle">Legendary
+            Maratha Forts</h3>
+          <p style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-bottom: var(--space-xl);"
+            data-i18n="history.fortsSubtitle">Ingenious military hill and sea bastions engineered for Swarajya by
+            Chhatrapati Shivaji Maharaj.</p>
+
+          <div class="carousel">
+            <div class="carousel-track" id="fortsTrack">
+              <div class="card">
+                <img src="images/fort-raigad.jpg" alt="Raigad Fort" class="card-img" loading="lazy">
+                <h4>Raigad Fort (रायगड)</h4>
+                <p>The sovereign capital of the Maratha Empire. Site of Shivaji Maharaj's coronation (Rajyabhishek) in
+                  1674, perched at 2,700 ft with the legendary Hirkani cliff.</p>
+              </div>
+              <div class="card">
+                <img src="images/fort-sinhagad.jpg" alt="Sinhagad Fort" class="card-img" loading="lazy">
+                <h4>Sinhagad Fort (सिंहगड)</h4>
+                <p>Originally Kondhana, recaptured by Tanaji Malusare in 1670. Famously honored with the saying: "Gad
+                  aala pan sinh gela" (We gained the fort, but lost the lion).</p>
+              </div>
+              <div class="card">
+                <img src="images/fort-pratapgad.jpg" alt="Pratapgad Fort" class="card-img" loading="lazy">
+                <h4>Pratapgad Fort (प्रतापगड)</h4>
+                <p>Built in 1656 overlooking the dense Jawali forests. Landmark site of the decisive confrontation
+                  between Shivaji Maharaj and Afzal Khan.</p>
+              </div>
+              <div class="card">
+                <img src="images/fort-shivneri.jpg" alt="Shivneri Fort" class="card-img" loading="lazy">
+                <h4>Shivneri Fort (शिवनेरी)</h4>
+                <p>The revered birthplace of Chhatrapati Shivaji Maharaj (19 February 1630) near Junnar, equipped with
+                  seven formidable defensive gates.</p>
+              </div>
+              <div class="card">
+                <img src="images/fort-rajgad.jpg" alt="Rajgad Fort" class="card-img" loading="lazy">
+                <h4>Rajgad Fort (राजगड)</h4>
+                <p>The first royal capital of the Maratha Empire for over 25 years. Masterpiece layout with Padmavati,
+                  Suvela, and Sanjivani machis.</p>
+              </div>
+              <div class="card">
+                <img src="images/fort-sindhudurg.jpg" alt="Sindhudurg Fort" class="card-img" loading="lazy">
+                <h4>Sindhudurg Fort (सिंधुदुर्ग)</h4>
+                <p>Impregnable ocean fortress constructed on Kurte Island off Malvan coast in 1664, representing the
+                  foundation of Maratha naval mastery.</p>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-btn" id="fortsPrev" aria-label="Previous Fort">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <button class="carousel-btn" id="fortsNext" aria-label="Next Fort">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ancient Caves Heritage -->
+        <div class="mt-3xl">
+          <h3 style="text-align: center; margin-bottom: var(--space-md);">UNESCO Rock-Cut Architecture</h3>
+          <div class="card-grid">
+            <div class="card">
+              <img src="images/heritage-ajanta.jpg" alt="Ajanta Caves" class="card-img" loading="lazy">
+              <h4>Ajanta Caves (अजिंठा)</h4>
+              <p>30 rock-cut Buddhist cave monuments (2nd century BCE to 480 CE) renowned for expressive frescoes,
+                master paintings, and Jataka tale murals.</p>
+            </div>
+            <div class="card">
+              <img src="images/heritage-ellora.jpg" alt="Ellora Caves Kailash Temple" class="card-img" loading="lazy">
+              <h4>Ellora Caves (वेरूळ)</h4>
+              <p>34 rock excavations celebrating Buddhist, Hindu, and Jain coexistence; home to the Kailash Temple,
+                carved top-to-bottom from a single monolithic basalt cliff.</p>
+            </div>
+            <div class="card">
+              <img src="images/heritage-elephanta.jpg" alt="Elephanta Island" class="card-img" loading="lazy">
+              <h4>Elephanta Island (घारापुरी)</h4>
+              <p>Island cave temples off Mumbai harbour dedicated to Lord Shiva, famous for the magnificent 20-foot tall
+                Trimurti (Sadashiva) sculpture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PEOPLE AND SOCIETY -->
+    <section id="people">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="people.title">People, Reformers & Society</h2>
+          <p data-i18n="people.subtitle">A society nurtured by monumental social reforms, egalitarian philosophy, and
+            vibrant cultural communities.</p>
+        </div>
+
+        <!-- Social Reformers -->
+        <h3 style="color: var(--orange-primary); margin-bottom: var(--space-lg); text-align: center;"
+          data-i18n="people.reformersTitle">Pioneering Social Reformers</h3>
+        <div class="card-grid">
+          <div class="reformer-card">
+            <div class="avatar-box">
+              <svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              </svg>
+            </div>
+            <h4>Mahatma Jyotirao Phule</h4>
+            <div class="role">Social Revolutionary (1827–1890)</div>
+            <p>Pioneered women's education, founded the Satyashodhak Samaj, attacked caste discrimination, and advocated
+              for farmers' rights.</p>
+          </div>
+
+          <div class="reformer-card">
+            <div class="avatar-box">
+              <svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+            </div>
+            <h4>Krantijyoti Savitribai Phule</h4>
+            <div class="role">India's First Female Teacher (1831–1897)</div>
+            <p>Started the first girls' school at Bhide Wada, Pune in 1848; broke untouchability taboos and opened care
+              shelters for widows.</p>
+          </div>
+
+          <div class="reformer-card">
+            <div class="avatar-box">
+              <svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <h4>Dr. B. R. Ambedkar</h4>
+            <div class="role">Architect of the Constitution (1891–1956)</div>
+            <p>World-renowned jurist and economist who championed human rights, led the Mahad Satyagraha, and enshrined
+              liberty, equality, and fraternity into law.</p>
+          </div>
+
+          <div class="reformer-card">
+            <div class="avatar-box">
+              <svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <h4>Rajarshi Chhatrapati Shahu Maharaj</h4>
+            <div class="role">King of Social Justice (1874–1922)</div>
+            <p>Visionary ruler of Kolhapur who introduced India's first 50% reservation for backward classes in 1902 and
+              provided free compulsory schooling.</p>
+          </div>
+        </div>
+
+        <!-- Communities & Values -->
+        <div class="card-grid-3 mt-xl">
+          <div class="card">
+            <h4 style="color: var(--orange-amber);">Communities & Tribes</h4>
+            <p>A harmonious mosaic including Marathi farmers, agrarian Kunbis, coastal Kolis (Mumbai's original
+              fisherfolk), Konkanis, and indigenous tribal communities such as Warli, Bhil, Gond, Korku, and Katkari.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--orange-amber);">Maharashtra Dharma</h4>
+            <p>The philosophical soul popularized by saint Ramdas and justice Ranade: ethical righteousness, brotherhood
+              across castes, defense of dignity, and selfless devotion to public welfare.</p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--orange-amber);">Hospitality & Resilience</h4>
+            <p>'Atithi Devo Bhava' in action: warmth of rural wada homes, sharing pitla-bhakri with travelers, the
+              unshakeable Mumbai spirit in crises, and devotion to the warkari ethos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. LANGUAGE AND LITERATURE -->
+    <section id="language" style="background: var(--bg-surface-alt);">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="language.title">Language & Literature</h2>
+          <p data-i18n="language.subtitle">Celebrated in October 2024 as a Classical Language of India, with 2,000+
+            years of vibrant prose, poetry, and theatre.</p>
+        </div>
+
+        <div style="text-align: center; margin-bottom: var(--space-xl);">
+          <span class="unesco-badge" style="font-size: 0.85rem; padding: 6px 16px;" data-i18n="language.badge">
+            Classical Language Status Conferred (October 2024)
+          </span>
+        </div>
+
+        <!-- Flip Cards Deck: 10 Marathi Phrases -->
+        <h3 style="text-align: center; margin-bottom: var(--space-md); color: var(--orange-primary);"
+          data-i18n="language.flipCardsTitle">Learn 10 Common Marathi Phrases (Click Card to Flip)</h3>
+        <div class="flip-cards-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="marathi-text">नमस्कार</div>
+                <div class="romanized">Namaskar</div>
+                <div class="tap-hint">Tap to flip</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="english-text">Hello / Greetings</div>
+                <div class="usage">Respectful greeting used at any time of day</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="marathi-text">कसं काय?</div>
+                <div class="romanized">Kasa kay?</div>
+                <div class="tap-hint">Tap to flip</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="english-text">How are you doing?</div>
+                <div class="usage">Casual, friendly inquiry among friends</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="marathi-text">धन्यवाद</div>
+                <div class="romanized">Dhanyavad</div>
+                <div class="tap-hint">Tap to flip</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="english-text">Thank You</div>
+                <div class="usage">Polite expression of gratitude</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="marathi-text">माझं नाव...</div>
+                <div class="romanized">Maza naav...</div>
+                <div class="tap-hint">Tap to flip</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="english-text">My name is...</div>
+                <div class="usage">Introduction phrase</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="marathi-text">खूप छान!</div>
+                <div class="romanized">Khoop chhaan!</div>
+                <div class="tap-hint">Tap to flip</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="english-text">Very Nice / Wonderful!</div>
+                <div class="usage">Complimenting food, arts, or work</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="marathi-text">जेवलात का?</div>
+                <div class="romanized">Jevlaat ka?</div>
+                <div class="tap-hint">Tap to flip</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="english-text">Did you have food?</div>
+                <div class="usage">Quintessential Maharashtrian sign of care!</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="marathi-text">पुन्हा भेटू!</div>
+                <div class="romanized">Puna bhetu!</div>
+                <div class="tap-hint">Tap to flip</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="english-text">See you again!</div>
+                <div class="usage">Warm farewell</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="marathi-text">माफ करा</div>
+                <div class="romanized">Maaf kara</div>
+                <div class="tap-hint">Tap to flip</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="english-text">Excuse me / Sorry</div>
+                <div class="usage">Apology or seeking attention</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="marathi-text">काय चाललंय?</div>
+                <div class="romanized">Kay chaallay?</div>
+                <div class="tap-hint">Tap to flip</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="english-text">What's going on?</div>
+                <div class="usage">Informal greeting phrase</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="marathi-text">जय महाराष्ट्र!</div>
+                <div class="romanized">Jai Maharashtra!</div>
+                <div class="tap-hint">Tap to flip</div>
+              </div>
+              <div class="flip-card-back">
+                <div class="english-text">Victory to Maharashtra!</div>
+                <div class="usage">State motto and patriotic salutation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Saints & Authors -->
+        <div class="card-grid mt-2xl">
+          <div class="card">
+            <h4 style="color: var(--orange-primary);" data-i18n="language.saintsTitle">Saint Poets & Varkari Literature
+            </h4>
+            <ul style="margin-top: var(--space-sm); line-height: 1.8; font-size: 0.9rem; color: var(--text-muted);">
+              <li><strong>Sant Dnyaneshwar (1275–1296):</strong> Authored Bhavartha Deepika (Dnyaneshwari) at age 16,
+                democratizing spiritual knowledge in Marathi.</li>
+              <li><strong>Sant Tukaram (1608–1649):</strong> Composed over 4,500 soul-stirring Gatha Abhangas
+                challenging social hypocrisy.</li>
+              <li><strong>Sant Eknath (1533–1599):</strong> Composed playful yet profound Bharuds and taught universal
+                empathy.</li>
+              <li><strong>Sant Namdev:</strong> Spread bhakti poetry to Punjab; his hymns are preserved in the Sikh Guru
+                Granth Sahib.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--orange-primary);" data-i18n="language.authorsTitle">Modern Literary Icons & Theatre
+            </h4>
+            <ul style="margin-top: var(--space-sm); line-height: 1.8; font-size: 0.9rem; color: var(--text-muted);">
+              <li><strong>Pu. La. Deshpande (P. L.):</strong> Beloved humorist, playwright, and cultural heartbeat of
+                modern Maharashtra.</li>
+              <li><strong>V. S. Khandekar:</strong> First Marathi author to win the Jnanpith Award (for the classic
+                novel <em>Yayati</em> in 1974).</li>
+              <li><strong>Kusumagraj (V. V. Shirwadkar):</strong> Jnanpith laureate whose birth anniversary (27 Feb) is
+                celebrated as Marathi Bhasha Gaurav Din.</li>
+              <li><strong>Vijay Tendulkar:</strong> Revolutionary dramatist behind timeless plays like <em>Ghashiram
+                  Kotwal</em> and <em>Sakharam Binder</em>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CULTURE AND TRADITION -->
+    <section id="culture">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="culture.title">Culture & Living Traditions</h2>
+          <p data-i18n="culture.subtitle">Experience high-energy festivals, rhythmic folk dances, timeless attire, and
+            master artisan crafts.</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="festivals" data-i18n="culture.tabFestivals">Festivals</button>
+          <button class="tab-btn" data-tab="dress" data-i18n="culture.tabDress">Traditional Dress</button>
+          <button class="tab-btn" data-tab="folkarts" data-i18n="culture.tabFolkArts">Folk Arts & Crafts</button>
+          <button class="tab-btn" data-tab="music" data-i18n="culture.tabMusic">Music & Instruments</button>
+          <button class="tab-btn" data-tab="rituals" data-i18n="culture.tabRituals">Rituals & Customs</button>
+        </div>
+
+        <!-- Tab 1: Festivals -->
+        <div class="tab-content active" data-content="festivals">
+          <div class="card-grid">
+            <div class="card">
+              <img src="images/culture-ganesh.jpg" alt="Ganesh Chaturthi festival" class="card-img" loading="lazy">
+              <h4>Ganesh Chaturthi (गणेशोत्सव)</h4>
+              <p>The grandest 10-day extravaganza! Massive mandals (Lalbaugcha Raja, Dagdusheth Halwai), rhythmic
+                Dhol-Tasha pathaks, and immersion on Anant Chaturdashi.</p>
+            </div>
+            <div class="card">
+              <img src="images/culture-gudipadwa.jpg" alt="Gudi Padwa festival" class="card-img" loading="lazy">
+              <h4>Gudi Padwa (गुढीपाडवा)</h4>
+              <p>The Marathi New Year marking the dawn of Chaitra. Families hoist the auspicious silk-draped Gudi, take
+                out Shobha Yatras, and feast on Shrikhand-Puri.</p>
+            </div>
+            <div class="card">
+              <img src="images/culture-wari.png" alt="Pandharpur Wari" class="card-img" loading="lazy">
+              <h4>Pandharpur Wari (आषाढी वारी)</h4>
+              <p>800-year-old walking pilgrimage of millions of warkaris singing 'Gyanba Tukaram' across 250 km to meet
+                Lord Vitthal and Rukmini on Ashadhi Ekadashi.</p>
+            </div>
+            <div class="card">
+              <img src="images/culture-pola.jpg" alt="Bail Pola festival" class="card-img" loading="lazy">
+              <h4>Bail Pola (बैल पोळा)</h4>
+              <p>Heartwarming rural festival where agrarian families express gratitude to bullocks and cattle by
+                bathing, decorating, and worshipping them.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Dress -->
+        <div class="tab-content" data-content="dress">
+          <div class="card-grid">
+            <div class="card">
+              <img src="images/culture-paithani.jpg" alt="Nauvari and Paithani saree" class="card-img" loading="lazy">
+              <h4>Nauvari Saree (नऊवारी साडी)</h4>
+              <p>Traditional nine-yard drape worn like a dhoti, offering regal grace and mobility. Worn by Rani
+                Lakshmibai in battle and at Maharashtrian weddings.</p>
+            </div>
+            <div class="card">
+              <img src="images/culture-pheta.jpg" alt="Pheta turban" class="card-img" loading="lazy">
+              <h4>Pheta & Puneri Pagdi (फेटा)</h4>
+              <p>Traditional ceremonial headgear wrapped in saffron, white, or Kolhapuri style, signifying honor and
+                royal Maratha valor.</p>
+            </div>
+            <div class="card">
+              <img src="images/culture-kolhapuri.jpg" alt="Handcrafted Kolhapuri Chappals" class="card-img"
+                loading="lazy">
+              <h4>Kolhapuri Chappal (कोल्हापुरी चप्पल)</h4>
+              <p>GI-tagged handcrafted vegetable-tanned leather sandals originating in Kolhapur since the 13th century,
+                prized for artisan durability.</p>
+            </div>
+            <div class="card">
+              <img src="images/culture-jewellery.jpg" alt="Traditional jewellery" class="card-img" loading="lazy">
+              <h4>Nath, Thushi & Kolhapuri Saaj</h4>
+              <p>Intricate gold heirloom jewellery including the paisley-shaped pearl nose-ring (Nath), snug choker
+                (Thushi), and 21-pendant Kolhapuri Saaj.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Folk Arts -->
+        <div class="tab-content" data-content="folkarts">
+          <div class="card-grid">
+            <div class="card">
+              <img src="images/culture-lavani.jpg" alt="Lavani folk dance" class="card-img" loading="lazy">
+              <h4>Lavani Dance (लावणी)</h4>
+              <p>High-energy folk dance characterized by rapid rhythmic footwork, synchronized Dholki beats, and vibrant
+                storytelling in nine-yard sarees.</p>
+            </div>
+            <div class="card">
+              <img src="images/culture-warli.jpg" alt="Warli tribal art painting" class="card-img" loading="lazy">
+              <h4>Warli Art (वारली चित्रकला)</h4>
+              <p>Centuries-old tribal painting using basic geometric figures (circles, triangles, lines) painted with
+                white rice paste on ochre mud walls.</p>
+            </div>
+            <div class="card">
+              <img src="images/culture-koli.jpg" alt="Koli coastal dance" class="card-img" loading="lazy">
+              <h4>Koli Dance (कोळी नृत्य)</h4>
+              <p>Lively folk dance of the seafaring Koli fishing community depicting waves, rowing of boats, and netting
+                catches to lively coastal tunes.</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.bhaskarassets.com/thumb/360x0/web2images/5483/2017/02/04/untitled-7_1486230599.jpg"
+                alt="Tamasha theatre" class="card-img" loading="lazy">
+              <h4>Bharud (भारुड)</h4>
+              <p>Interactive rural theatre blending social satire, musical skits, devotional metaphors, and theatrical
+                humor directly for public audiences.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Music -->
+        <div class="tab-content" data-content="music">
+          <div class="card-grid">
+            <div class="card">
+              <img src="images/culture-dhol.jpg" alt="Dhol-Tasha ensemble" class="card-img" loading="lazy">
+              <h4>Dhol-Tasha & Lezim</h4>
+              <p>Thunderous percussion ensembles performed during Ganeshotsav and Shivjayanti, creating acoustic
+                vibrations and communal unity.</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Ranasringa_MET_89.4.161_slide.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+                alt="Tutari brass instrument" class="card-img" loading="lazy">
+              <h4>Tutari (तुतारी)</h4>
+              <p>Traditional curved brass wind instrument blown to announce the arrival of royalty, dignitaries, and
+                victorious warriors.</p>
+            </div>
+            <div class="card">
+              <img src="https://www.forwardpress.in/wp-content/uploads/2016/01/powada-e1452773528775.jpg"
+                alt="Powada ballad performance" class="card-img" loading="lazy">
+              <h4>Powada & Daf (पोवाडा)</h4>
+              <p>Heroic ballads sung by Shahirs with the tambourine-like Daf, stirring audiences with tales of Shivaji
+                Maharaj's battles.</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOBRK6cbygoKFvyiuwNFEwqDC0yHfJQYnt2eOxekX7PhhTWaFGUMDyi5s&s=10"
+                alt="Natyasangeet and Abhang" class="card-img" loading="lazy">
+              <h4>Natyasangeet & Abhang</h4>
+              <p>Semi-classical vocal music tradition integral to Marathi musical drama (Sangeet Natak), accompanied by
+                harmonium and tabla.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Rituals -->
+        <div class="tab-content" data-content="rituals">
+          <div class="card-grid">
+            <div class="card">
+              <img src="https://i.pinimg.com/474x/a0/8e/2e/a08e2eb0226c5e70bbedb5cf66573ad2.jpg"
+                alt="Haldi Kunku ceremony" class="card-img" loading="lazy">
+              <h4>Haldi-Kunku & Tilgul</h4>
+              <p>Social gatherings celebrating sisterhood during Makar Sankranti with the sweet blessing: "Tilgul ghya,
+                god god bola" (Eat sesame sweets, speak sweetly!).</p>
+            </div>
+            <div class="card">
+              <img src="https://dhaaramagazine.in/wp-content/uploads/2021/01/03FRGONDHALDANCE.jpg" alt="Gondhal ritual"
+                class="card-img" loading="lazy">
+              <h4>Gondhal (गोंधळ)</h4>
+              <p>Sacred midnight theatrical ritual in praise of Goddess Bhavani of Tuljapur or Renuka of Mahur,
+                performed during auspicious family milestones.</p>
+            </div>
+            <div class="card">
+              <img src="https://www.speakmarathi.com/wp-content/uploads/2022/08/mangalagaur3.jpeg"
+                alt="Mangalagaur festival" class="card-img" loading="lazy">
+              <h4>Mangalagaur (मंगळागौर)</h4>
+              <p>Traditional ritual during the holy month of Shravan where newly married women perform 100+ folk games
+                (Zimma, Fugdi) late into the night.</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRElEFlt5KtjWlJxldcN-1wjfDoSKPnEFJ88ootD_e_FKB9f83LRbZgyvyl&s=10"
+                alt="Sanskar Bharati Rangoli" class="card-img" loading="lazy">
+              <h4>Sanskar Bharati Rangoli</h4>
+              <p>Intricate, vibrant powder patterns hand-drawn outside front thresholds every morning to welcome
+                prosperity and positive energy into the home.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CUISINE (FOOD) -->
+    <section id="food" style="background: var(--bg-surface-alt);">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="food.title">Maharashtrian Cuisine</h2>
+          <p data-i18n="food.subtitle">From coastal coconut curries to spicy Vidarbha gravies and beloved Mumbai street
+            delicacies.</p>
+        </div>
+
+        <!-- Today's Stall Menu Highlight Banner -->
+        <div class="stall-menu-card mb-xl">
+          <h3 data-i18n="food.stallMenuTitle">Today's Live Stall Menu • AI & Data Science</h3>
+          <p style="margin-bottom: var(--space-md); color: var(--text-muted);" data-i18n="food.stallMenuDesc">Served
+            fresh at our stall today! Come taste authentic Maharashtra flavors:</p>
+          <div class="menu-items">
+            <span class="menu-item-tag">Ukadiche Modak (उकडीचे मोदक)</span>
+            <span class="menu-item-tag">Puran Poli with Pure Ghee (पुरणपोळी)</span>
+            <span class="menu-item-tag">Mumbai Vada Pav (वडापाव)</span>
+            <span class="menu-item-tag">Kothimbir Vadi (कोथिंबीर वडी)</span>
+            <span class="menu-item-tag">Chilled Solkadhi (सोलकढी)</span>
+            <span class="menu-item-tag">Puneri Misal Pav (मिसळ पाव)</span>
+          </div>
+        </div>
+
+        <!-- Regional Delicacies -->
+        <h3 style="color: var(--orange-primary); margin-bottom: var(--space-md); text-align: center;"
+          data-i18n="food.regionalTitle">Regional Flavors</h3>
+        <div class="food-grid mb-2xl">
+          <div class="food-card">
+            <img src="images/food-modak.jpg" alt="Ukadiche Modak" class="card-img"
+              style="height: 160px; object-fit: cover; width: 100%;">
+            <div class="food-info">
+              <span class="region-tag">Konkan Coast</span>
+              <h4>Ukadiche Modak & Solkadhi</h4>
+              <p>Steamed rice flour dumplings stuffed with fresh coconut and jaggery; paired with tangy pink
+                kokum-coconut digestive solkadhi.</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <img
+              src="https://content.jdmagicbox.com/comp/kolhapur/b6/0231px231.x231.130430173159.m9b6/catalogue/tambda-pandhra-restaurant-shivaji-park-kolhapur-restaurants-nqv81vhxax.jpg"
+              alt="Solkadhi & Kolhapuri Thali" class="card-img" style="height: 160px; object-fit: cover; width: 100%;">
+            <div class="food-info">
+              <span class="region-tag">Kolhapur</span>
+              <h4>Tambda & Pandhra Rassa</h4>
+              <p>Fiery red chili broth ('Tambda') contrasted with aromatic, coconut-simmered white broth ('Pandhra')
+                paired with spiced mutton and Kolhapuri Misal.</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <img src="images/food-misalpav.jpg" alt="Puneri Misal Pav" class="card-img"
+              style="height: 160px; object-fit: cover; width: 100%;">
+            <div class="food-info">
+              <span class="region-tag">Pune</span>
+              <h4>Puneri Misal</h4>
+              <p>Spicy rolled fried savory pinwheels from Chitale Bandhu, and topped sprout curry misal served with
+                toasted butter pav.</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZVSNJ2EaNHkjkWE5z6Nq6T-IyqXnkTTY4gCy6R0NP6ThoAhgIV7hR4amo&s=10"
+              alt="Vidarbha & Street Flavors" class="card-img" style="height: 160px; object-fit: cover; width: 100%;">
+            <div class="food-info">
+              <span class="region-tag">Vidarbha & Nagpur</span>
+              <h4>Saoji Cuisine & Orange Barfi</h4>
+              <p>Distinctive spicy heritage masala prepared by Halba Koshti weavers, followed by Nagpur's famous citrus
+                orange barfi.</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <img src="images/food-thalipeeth.jpg" alt="Pithla Bhakri & Thalipeeth" class="card-img"
+              style="height: 160px; object-fit: cover; width: 100%;">
+            <div class="food-info">
+              <span class="region-tag">Marathwada & Desh</span>
+              <h4>Pithla Bhakri & Thecha</h4>
+              <p>Gram-flour curry cooked with garlic, eaten hot with coarse jowar/bajra bhakri, raw onion, and fiery
+                crushed green chili thecha.</p>
+            </div>
+          </div>
+          <div class="food-card">
+            <img src="https://temptingtreat.com/wp-content/uploads/2025/03/puran-poli-p3.jpg"
+              alt="Puran Poli with Cow Ghee" class="card-img" style="height: 160px; object-fit: cover; width: 100%;">
+            <div class="food-info">
+              <span class="region-tag">Statewide</span>
+              <h4>Puran Poli & Katachi Amti</h4>
+              <p>Sweet chana-dal stuffed flatbread flavored with cardamom and nutmeg, drizzled with pure cow ghee and
+                tangy chana stock curry.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Street Food Grid -->
+        <h3 style="color: var(--orange-primary); margin-bottom: var(--space-md); text-align: center;"
+          data-i18n="food.streetFoodTitle">Celebrated Street Foods</h3>
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));">
+          <div class="card text-center" style="overflow: hidden; padding-top: 0; padding-left: 0; padding-right: 0;">
+            <img src="images/food-vadapav.jpg" alt="Vada Pav"
+              style="width: 100%; height: 140px; object-fit: cover; margin-bottom: 12px;">
+            <div style="padding: 0 16px 16px 16px;">
+              <h4>Vada Pav</h4>
+              <p>Golden spiced potato patty inside fresh bun with dry red garlic-chili chutney.</p>
+            </div>
+          </div>
+          <div class="card text-center" style="overflow: hidden; padding-top: 0; padding-left: 0; padding-right: 0;">
+            <img src="images/food-pavbhaji.jpg" alt="Pav Bhaji"
+              style="width: 100%; height: 140px; object-fit: cover; margin-bottom: 12px;">
+            <div style="padding: 0 16px 16px 16px;">
+              <h4>Pav Bhaji</h4>
+              <p>Butter-loaded mashed vegetable medley served with toasted spiced pav.</p>
+            </div>
+          </div>
+          <div class="card text-center" style="overflow: hidden; padding-top: 0; padding-left: 0; padding-right: 0;">
+            <img src="images/food-bhel.jpg" alt="Bhel Puri"
+              style="width: 100%; height: 140px; object-fit: cover; margin-bottom: 12px;">
+            <div style="padding: 0 16px 16px 16px;">
+              <h4>Bhel Puri</h4>
+              <p>Crispy puffed rice tossed with tangy tamarind, mint chutney, and sev.</p>
+            </div>
+          </div>
+          <div class="card text-center" style="overflow: hidden; padding-top: 0; padding-left: 0; padding-right: 0;">
+            <img src="images/food-thalipeeth.jpg" alt="Thalipeeth"
+              style="width: 100%; height: 140px; object-fit: cover; margin-bottom: 12px;">
+            <div style="padding: 0 16px 16px 16px;">
+              <h4>Thalipeeth</h4>
+              <p>Multi-grain spiced savory flatbread served with fresh white butter (loni).</p>
+            </div>
+          </div>
+          <div class="card text-center" style="overflow: hidden; padding-top: 0; padding-left: 0; padding-right: 0;">
+            <img src="https://www.indianveggiedelight.com/wp-content/uploads/2021/10/sabudana-khichdi-1-featured.jpg"
+              alt="Sabudana Khichdi" style="width: 100%; height: 140px; object-fit: cover; margin-bottom: 12px;">
+            <div style="padding: 0 16px 16px 16px;">
+              <h4>Sabudana Khichdi</h4>
+              <p>Tossed sago pearls with roasted crushed peanuts, cumin, and green chillies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. TOURISM AND PLACES -->
+    <section id="tourism">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="tourism.title">Destinations & World Heritage</h2>
+          <p data-i18n="tourism.subtitle">Discover misty Sahyadri hill stations, golden beaches, UNESCO World Heritage
+            monuments, and sacred pilgrimage shrines.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-tourism-filter="all" data-i18n="tourism.filterAll">All
+            Destinations</button>
+          <button class="filter-btn" data-tourism-filter="heritage" data-i18n="tourism.filterHeritage">Heritage &
+            Caves</button>
+          <button class="filter-btn" data-tourism-filter="hills" data-i18n="tourism.filterHills">Hill Stations</button>
+          <button class="filter-btn" data-tourism-filter="beaches" data-i18n="tourism.filterBeaches">Coastal
+            Beaches</button>
+          <button class="filter-btn" data-tourism-filter="pilgrimage"
+            data-i18n="tourism.filterPilgrimage">Pilgrimage</button>
+          <button class="filter-btn" data-tourism-filter="wildlife" data-i18n="tourism.filterWildlife">Wildlife
+            Reserves</button>
+        </div>
+
+        <div class="card-grid">
+          <div class="tourism-card" data-category="heritage">
+            <img src="images/tour-csmt.jpg" alt="Mumbai CSMT & Gateway of India" class="card-img"
+              style="height: 180px; object-fit: cover; width: 100%;">
+            <div class="tourism-info">
+              <span class="unesco-badge">UNESCO Site</span>
+              <h4>Mumbai Ensemble & CSMT</h4>
+              <p>Chhatrapati Shivaji Maharaj Terminus (Victorian Gothic architectural masterpiece) and the Victorian &
+                Art Deco Ensemble along Marine Drive.</p>
+            </div>
+          </div>
+
+          <div class="tourism-card" data-category="heritage">
+            <img src="images/heritage-ellora.jpg" alt="Ajanta & Ellora Caves" class="card-img"
+              style="height: 180px; object-fit: cover; width: 100%;">
+            <div class="tourism-info">
+              <span class="unesco-badge">UNESCO Site</span>
+              <h4>Ajanta & Ellora Caves</h4>
+              <p>Rock-cut sanctuaries in Chh. Sambhajinagar, spanning 800 years of Buddhist, Hindu, and Jain sculpture,
+                including the monumental monolithic Kailash Temple.</p>
+            </div>
+          </div>
+
+          <div class="tourism-card" data-category="hills">
+            <img src="https://mahabaleshwartourism.in/images/v2/places-to-visit/mahabaleshwar-temple-tourism-header.jpg"
+              alt="Mahabaleshwar Hills" class="card-img" style="height: 180px; object-fit: cover; width: 100%;">
+            <div class="tourism-info">
+              <span class="category-badge">Hill Station</span>
+              <h4>Mahabaleshwar & Panchgani</h4>
+
+              <p>Crown of the Sahyadri mountains at 4,400 ft, known for year-round pleasant climate, strawberry farms,
+                and panoramic Arthur's Seat cliff.</p>
+            </div>
+          </div>
+
+          <div class="tourism-card" data-category="hills">
+            <img
+              src="https://hblimg.mmtcdn.com/content/hubble/img/lonavaladestimgs/mmt/activities/m_Rajmachi_Fort_Lonavala_1_l_480_640.jpg"
+              alt="Lonavala Ghats" class="card-img" style="height: 180px; object-fit: cover; width: 100%;">
+            <div class="tourism-info">
+              <span class="category-badge">Hill Station</span>
+              <h4>Lonavala & Khandala</h4>
+              <p>Scenic monsoon paradise nestled in the Western Ghats, famous for chikki confectionery, Karla-Bhaja rock
+                caves, and Tiger's Leap view.</p>
+            </div>
+          </div>
+
+          <div class="tourism-card" data-category="beaches">
+            <img src="images/tour-alibaug.jpg" alt="Alibaug Coast" class="card-img"
+              style="height: 180px; object-fit: cover; width: 100%;">
+            <div class="tourism-info">
+              <span class="category-badge">Coastal Beach</span>
+              <h4>Alibaug & Kashid Coast</h4>
+              <p>Pristine white sand beaches along the Konkan coast with ocean fort Kolaba accessible during low tide
+                and serene water sports.</p>
+            </div>
+          </div>
+
+          <div class="tourism-card" data-category="pilgrimage">
+            <img src="images/tour-shirdi.jpg" alt="Ashtavinayak & Shirdi" class="card-img"
+              style="height: 180px; object-fit: cover; width: 100%;">
+            <div class="tourism-info">
+              <span class="category-badge">Pilgrimage</span>
+              <h4>Ashtavinayak & Shirdi</h4>
+              <p>Sacred circuit of 8 self-manifested Ganesha temples around Pune, alongside Shirdi, home to millions
+                seeking blessings of Sai Baba.</p>
+            </div>
+          </div>
+
+          <div class="tourism-card" data-category="pilgrimage">
+            <img src="https://www.shrineyatra.com/wp-content/uploads/2024/01/5-Jyotirlinga-of-Maharashtra.webp"
+              alt="Maharashtra Jyotirlinga Shrines" class="card-img"
+              style="height: 180px; object-fit: cover; width: 100%;">
+            <div class="tourism-info">
+              <span class="category-badge">Pilgrimage</span>
+              <h4>Maharashtra's 5 Jyotirlingas</h4>
+              <p>Home to 5 of India's 12 Jyotirlinga shrines: Trimbakeshwar (Nashik), Bhimashankar (Pune), Grishneshwar
+                (Ellora), Aundha Nagnath, and Parli Vaijnath.</p>
+            </div>
+          </div>
+
+          <div class="tourism-card" data-category="wildlife">
+            <img src="images/tour-tadoba.jpg" alt="Tadoba Andhari Tiger Reserve" class="card-img"
+              style="height: 180px; object-fit: cover; width: 100%;">
+            <div class="tourism-info">
+              <span class="category-badge">Wildlife</span>
+              <h4>Tadoba Andhari Tiger Reserve</h4>
+              <p>Maharashtra's premier tiger sanctuary in Chandrapur, harboring one of the highest densities of Royal
+                Bengal Tigers, leopards, and sloth bears.</p>
+            </div>
+          </div>
+
+          <div class="tourism-card" data-category="heritage">
+            <img src="images/tour-lonar.jpg" alt="Lonar Meteorite Crater Lake" class="card-img"
+              style="height: 180px; object-fit: cover; width: 100%;">
+            <div class="tourism-info">
+              <span class="category-badge">Geo-Heritage</span>
+              <h4>Lonar Meteorite Crater Lake</h4>
+              <p>The world's only hyper-velocity meteorite impact crater formed in basaltic rock 52,000 years ago in
+                Buldhana, creating a unique saline-alkaline closed eco-lake.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. ECONOMY AND PRESENT-DAY ACHIEVEMENTS -->
+    <section id="economy" style="background: var(--bg-surface-alt);">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="economy.title">Economy, Industry & Megaprojects</h2>
+          <p data-i18n="economy.subtitle">India's undisputed economic growth engine contributing ~14% to the national
+            GDP.</p>
+        </div>
+
+        <!-- Big Stat Counters -->
+        <div class="stats-strip">
+          <div class="stat-card">
+            <div class="big-number counter-val" data-target="14" data-suffix="%">0%</div>
+            <div class="stat-desc" data-i18n="economy.statGdpDesc">Share of India's Total GDP</div>
+          </div>
+          <div class="stat-card">
+            <div class="big-number">#1</div>
+            <div class="stat-desc" data-i18n="economy.statFdiDesc">Destination for FDI Equity Inflows</div>
+          </div>
+          <div class="stat-card">
+            <div class="big-number counter-val" data-target="50" data-suffix="%+">0%</div>
+            <div class="stat-desc">India's Container Cargo handled via JNPT</div>
+          </div>
+          <div class="stat-card">
+            <div class="big-number">Top #1</div>
+            <div class="stat-desc" data-i18n="economy.statAgriDesc">Sugarcane, Grapes, Onions & Cotton</div>
+          </div>
+        </div>
+
+        <!-- Infrastructure Marvels -->
+        <h3 style="color: var(--orange-primary); margin-bottom: var(--space-md); text-align: center;"
+          data-i18n="economy.infraTitle">Next-Gen Infrastructure Marvels</h3>
+        <div class="card-grid">
+          <div class="card" style="overflow: hidden; padding-top: 0; padding-left: 0; padding-right: 0;">
+            <img src="images/infra-atalsetu.jpg" alt="Atal Setu MTHL Bridge"
+              style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 14px;">
+            <div style="padding: 0 16px 16px 16px;">
+              <h4>Atal Setu (MTHL Bridge)</h4>
+              <p>21.8 km long 6-lane access-controlled sea bridge connecting Mumbai with Navi Mumbai — the longest sea
+                bridge in India, slashing travel time from 2 hours to 20 minutes.</p>
+            </div>
+          </div>
+          <div class="card" style="overflow: hidden; padding-top: 0; padding-left: 0; padding-right: 0;">
+            <img src="images/infra-samruddhi.jpg" alt="Samruddhi Mahamarg Expressway"
+              style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 14px;">
+            <div style="padding: 0 16px 16px 16px;">
+              <h4>Samruddhi Mahamarg</h4>
+              <p>701 km long 6-lane super-communication expressway linking Mumbai to Nagpur through 10 districts,
+                supercharging industrial corridors in Vidarbha and Marathwada.</p>
+            </div>
+          </div>
+          <div class="card" style="overflow: hidden; padding-top: 0; padding-left: 0; padding-right: 0;">
+            <img src="images/infra-metro.jpg" alt="Mumbai Metro & Coastal Road"
+              style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 14px;">
+            <div style="padding: 0 16px 16px 16px;">
+              <h4>Mumbai Metro & Coastal Road</h4>
+              <p>Over 330 km of interconnected metro lines under active execution alongside the Mumbai Coastal Road
+                featuring India's first undersea road tunnels.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research & Education -->
+        <div class="card mt-xl">
+          <h4 style="color: var(--orange-amber); margin-bottom: var(--space-sm);" data-i18n="economy.educationTitle">
+            Centers of Higher Learning & Research</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.8;">
+            Home to premier scientific, engineering, and medical institutions: <strong>IIT Bombay</strong> (Powai),
+            <strong>COEP Technological University</strong> (Pune, founded 1854), <strong>ICT</strong> (Mumbai),
+            <strong>TIFR</strong> (Tata Institute of Fundamental Research), <strong>BARC</strong> (Bhabha Atomic
+            Research Centre), and <strong>NCL</strong> (National Chemical Laboratory).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. RENOWNED PERSONALITIES -->
+    <section id="personalities">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="personalities.title">Renowned Personalities</h2>
+          <p data-i18n="personalities.subtitle">Great visionaries, rulers, scientists, artists, and athletes who shaped
+            the state and the nation.</p>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-person-filter="all" data-i18n="personalities.filterAll">All
+            Luminaries</button>
+          <button class="filter-btn" data-person-filter="rulers" data-i18n="personalities.filterRulers">Rulers &
+            Leaders</button>
+          <button class="filter-btn" data-person-filter="reformers" data-i18n="personalities.filterReformers">Social
+            Reformers</button>
+          <button class="filter-btn" data-person-filter="arts" data-i18n="personalities.filterArts">Arts &
+            Literature</button>
+          <button class="filter-btn" data-person-filter="sports" data-i18n="personalities.filterSports">Sports
+            Champions</button>
+          <button class="filter-btn" data-person-filter="science" data-i18n="personalities.filterScience">Science &
+            Industry</button>
+        </div>
+
+        <div class="card-grid">
+          <!-- Rulers -->
+          <div class="personality-card" data-category="rulers">
+            <div class="avatar-box" style="padding: 2px; overflow: hidden;">
+              <img src="images/shivaji-maharaj.png" alt="Chhatrapati Shivaji Maharaj"
+                style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            </div>
+            <div class="info">
+              <h4>Chhatrapati Shivaji Maharaj</h4>
+              <div class="field">Founder of Hindavi Swarajya</div>
+              <p>Visionary ruler, strategist, naval pioneer, and champion of secular people-first governance.</p>
+            </div>
+          </div>
+
+          <div class="personality-card" data-category="rulers">
+            <div class="avatar-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3 7h6l-5 4 2 7-6-4-6 4 2-7-5-4h6z" />
+              </svg>
+            </div>
+            <div class="info">
+              <h4>Maharani Tarabai</h4>
+              <div class="field">Maratha Warrior Queen</div>
+              <p>Regent of the Maratha Empire who organized guerrilla resistance against Mughal armies across the
+                Deccan.</p>
+            </div>
+          </div>
+
+          <!-- Reformers -->
+          <div class="personality-card" data-category="reformers">
+            <div class="avatar-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <div class="info">
+              <h4>Dr. B. R. Ambedkar</h4>
+              <div class="field">Chief Architect of Indian Constitution</div>
+              <p>Bharat Ratna, economist, and human rights champion who led revolutionary equality movements.</p>
+            </div>
+          </div>
+
+          <div class="personality-card" data-category="reformers">
+            <div class="avatar-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              </svg>
+            </div>
+            <div class="info">
+              <h4>Mahatma Jyotirao Phule</h4>
+              <div class="field">Social Reformer & Educationist</div>
+              <p>Founded the Satyashodhak Samaj and championed universal education for women and depressed classes.</p>
+            </div>
+          </div>
+
+          <div class="personality-card" data-category="reformers">
+            <div class="avatar-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+            </div>
+            <div class="info">
+              <h4>Lokmanya Bal Gangadhar Tilak</h4>
+              <div class="field">Freedom Fighter & Mass Mobilizer</div>
+              <p>Nationalist leader who declared: "Swaraj is my birthright and I shall have it!" and transformed public
+                Ganeshotsav.</p>
+            </div>
+          </div>
+
+          <!-- Arts -->
+          <div class="personality-card" data-category="arts">
+            <div class="avatar-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18V5l12-2v13" />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="18" cy="16" r="3" />
+              </svg>
+            </div>
+            <div class="info">
+              <h4>Lata Mangeshkar</h4>
+              <div class="field">Nightingale of India • Bharat Ratna</div>
+              <p>Legendary playback singer with over 30,000 songs across 36 languages spanning seven decades.</p>
+            </div>
+          </div>
+
+          <div class="personality-card" data-category="arts">
+            <div class="avatar-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" />
+                <line x1="7" y1="2" x2="7" y2="22" />
+                <line x1="17" y1="2" x2="17" y2="22" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+              </svg>
+            </div>
+            <div class="info">
+              <h4>Dadasaheb Phalke</h4>
+              <div class="field">Father of Indian Cinema</div>
+              <p>Directed India's first full-length feature film <em>Raja Harishchandra</em> (1913), launching the
+                world's largest film industry.</p>
+            </div>
+          </div>
+
+          <div class="personality-card" data-category="arts">
+            <div class="avatar-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 20h9" />
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+              </svg>
+            </div>
+            <div class="info">
+              <h4>Pu. La. Deshpande</h4>
+              <div class="field">Beloved Marathi Writer & Playwright</div>
+              <p>Master satirist, musician, and stage performer whose wit defines 20th-century Marathi literature.</p>
+            </div>
+          </div>
+
+          <!-- Sports -->
+          <div class="personality-card" data-category="sports">
+            <div class="avatar-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12a4 4 0 0 1 8 0m-4-8v16" />
+              </svg>
+            </div>
+            <div class="info">
+              <h4>Sachin Tendulkar</h4>
+              <div class="field">Master Blaster • Bharat Ratna</div>
+              <p>All-time highest international run-scorer with 100 international centuries, born and raised in Mumbai.
+              </p>
+            </div>
+          </div>
+
+          <div class="personality-card" data-category="sports">
+            <div class="avatar-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7" />
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+              </svg>
+            </div>
+            <div class="info">
+              <h4>Khashaba Dadasaheb Jadhav</h4>
+              <div class="field">First Individual Olympic Medalist</div>
+              <p>Wrestler from Satara who won independent India's first individual Olympic medal (Bronze at 1952
+                Helsinki).</p>
+            </div>
+          </div>
+
+          <!-- Science & Industry -->
+          <div class="personality-card" data-category="science">
+            <div class="avatar-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="2" />
+                <path d="M12 2a10 10 0 0 0-10 10c0 4 2.5 7.5 6 9m8-19a10 10 0 0 1 10 10c0 4-2.5 7.5-6 9" />
+              </svg>
+            </div>
+            <div class="info">
+              <h4>Dr. Homi Jehangir Bhabha</h4>
+              <div class="field">Father of Indian Nuclear Programme</div>
+              <p>Visionary nuclear physicist who founded TIFR and launched India's indigenous three-stage atomic energy
+                program.</p>
+            </div>
+          </div>
+
+          <div class="personality-card" data-category="science">
+            <div class="avatar-box">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
+            <div class="info">
+              <h4>Ratan Tata</h4>
+              <div class="field">Industrialist & Philanthropist</div>
+              <p>Iconic chairman of Tata Sons who elevated Indian business globally while giving 65%+ of profits back to
+                healthcare and education.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. ENGINEERING ASPECT & AI CORNER -->
+    <section id="engineering" style="background: var(--bg-surface-alt);">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="engineering.title">Engineering Marvels & AI Corner</h2>
+          <p data-i18n="engineering.subtitle">Connecting ancient rock-cut hydraulics and fort engineering with modern AI
+            and data analytics.</p>
+        </div>
+
+        <!-- Ancient & Modern Engineering -->
+        <div class="card-grid mb-2xl">
+          <div class="card">
+            <h4 style="color: var(--orange-primary);">Ancient Fort Water Hydraulics</h4>
+            <p>Maratha hill forts (Raigad, Sinhagad, Rajgad) survived prolonged sieges through rock-cut tanks (Taake),
+              gravity feed channels, and natural contour silt-settling filtration engineered directly into basalt rock.
+            </p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--orange-primary);">Ajanta-Ellora Rock Excavation</h4>
+            <p>The Kailash Temple at Ellora required the removal of 200,000 tonnes of basalt rock using only hammers and
+              chisels, carved from top-to-bottom with millimeter architectural precision.</p>
+          </div>
+          <div class="card">
+            <h4 style="color: var(--orange-primary);">Modern Infrastructure Titans</h4>
+            <p>From the Koyna Hydroelectric Project (India's largest completed hydroelectric plant) to the 21.8 km Atal
+              Setu sea bridge and Samruddhi Highway's smart tolling and wildlife underpasses.</p>
+          </div>
+        </div>
+
+        <!-- AI&DS Dashboard: 4 Chart.js Canvases -->
+        <h3 style="text-align: center; margin-bottom: var(--space-lg); color: var(--orange-primary);">Data Science
+          Dashboard • Maharashtra Metrics</h3>
+        <div class="charts-grid">
+          <div class="chart-card">
+            <h4 data-i18n="engineering.chart1Title">Population Share by Division</h4>
+            <div style="height: 260px; position: relative;">
+              <canvas id="populationChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-card">
+            <h4 data-i18n="engineering.chart2Title">Major Agricultural Production (Lakh MT)</h4>
+            <div style="height: 260px; position: relative;">
+              <canvas id="cropsChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-card">
+            <h4 data-i18n="engineering.chart3Title">State Festival Calendar Distribution</h4>
+            <div style="height: 260px; position: relative;">
+              <canvas id="festivalsChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-card">
+            <h4 data-i18n="engineering.chart4Title">Sectoral GDP Contribution (%)</h4>
+            <div style="height: 260px; position: relative;">
+              <canvas id="gdpChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <div class="tech-badge">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+            </svg>
+            <span data-i18n="engineering.techBadge">Built with HTML5, CSS3, Modern JS, Leaflet & Chart.js</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. STATE QUIZ -->
+    <section id="quiz">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="quiz.title">Maharashtra Challenge Quiz</h2>
+          <p data-i18n="quiz.subtitle">Test your knowledge about Maharashtra's heritage, culture, geography, and heroes!
+          </p>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+          <!-- Quiz Start Screen -->
+          <div class="quiz-start" id="quizStart">
+            <div style="display: flex; justify-content: center; margin-bottom: var(--space-md);">
+              <div class="icon-box" style="width: 64px; height: 64px; border-radius: 50%;">
+                <svg class="svg-icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="12" r="2" />
+                </svg>
+              </div>
+            </div>
+            <h3>How well do you know Maharashtra?</h3>
+            <p>Answer 10 randomized multiple-choice questions to claim your honorary title and test your cultural
+              awareness!</p>
+            <button class="btn btn-primary" id="quizStartBtn" data-i18n="quiz.startBtn">Start 10-Question Quiz
+              →</button>
+          </div>
+
+          <!-- Quiz Play Screen -->
+          <div id="quizPlay" style="display: none;">
+            <div class="quiz-progress">
+              <div class="quiz-progress-bar" id="quizProgressBar"></div>
+            </div>
+            <div class="quiz-question-count" id="quizQuestionCount">Question 1 of 10</div>
+            <div class="quiz-question" id="quizQuestionText">Question text goes here...</div>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div class="quiz-explanation" id="quizExplanation"></div>
+            <button class="btn btn-primary quiz-next-btn" id="quizNextBtn" data-i18n="quiz.nextBtn">Next Question
+              →</button>
+          </div>
+
+          <!-- Quiz Result Screen -->
+          <div class="quiz-result" id="quizResult">
+            <div class="score-circle">
+              <div class="score-number" id="quizScoreNumber">0</div>
+              <div class="score-total" id="quizScoreTotal">out of 10</div>
+            </div>
+            <div class="score-title" id="quizScoreTitle">Maharashtra Maestro</div>
+            <p class="score-message" id="quizScoreMessage">Well done! Explore the rest of our stall to learn even more.
+            </p>
+            <button class="btn btn-primary" id="quizRestartBtn" data-i18n="quiz.restartBtn">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. OUR STALL -->
+    <section id="stall" style="background: var(--bg-surface-alt);">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="stall.title">Our Competition Stall</h2>
+          <p data-i18n="stall.subtitle">Department of Artificial Intelligence & Data Science • Unity in Diversity 2026
+          </p>
+        </div>
+
+        <!-- Banner -->
+        <div class="stall-banner">
+          <h3 data-i18n="stall.stallBannerTitle">Welcome to Stall #Maharashtra</h3>
+          <p data-i18n="stall.stallBannerDesc">Visit our vibrant exhibition booth for authentic food tasting,
+            traditional attire photo-ops, live tech demonstrations, and interactive cultural displays!</p>
+        </div>
+
+        <!-- What We are Showcasing -->
+        <div class="card-grid mb-2xl">
+          <div class="card text-center">
+            <div style="display: flex; justify-content: center; margin-bottom: 8px;">
+              <div class="icon-box"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                  <line x1="6" y1="1" x2="6" y2="4" />
+                  <line x1="10" y1="1" x2="10" y2="4" />
+                  <line x1="14" y1="1" x2="14" y2="4" />
+                </svg></div>
+            </div>
+            <h4>Authentic Cuisine</h4>
+            <p>Ukadiche Modak, Puran Poli with cow ghee, Mumbai Vada Pav, and chilled digestive Solkadhi.</p>
+          </div>
+          <div class="card text-center">
+            <div style="display: flex; justify-content: center; margin-bottom: 8px;">
+              <div class="icon-box"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path
+                    d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z" />
+                </svg></div>
+            </div>
+            <h4>Traditional Costumes</h4>
+            <p>Students dressed in nine-yard Nauvari sarees, Paithani borders, saffron Phetas, and Nehru caps.</p>
+          </div>
+          <div class="card text-center">
+            <div style="display: flex; justify-content: center; margin-bottom: 8px;">
+              <div class="icon-box"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" />
+                </svg></div>
+            </div>
+            <h4>Cultural Artifacts</h4>
+            <p>Warli canvas art, brass Samai lamps, authentic Kolhapuri Chappals, and hand-woven Paithani silk.</p>
+          </div>
+          <div class="card text-center">
+            <div style="display: flex; justify-content: center; margin-bottom: 8px;">
+              <div class="icon-box"><svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg></div>
+            </div>
+            <h4>Engineering & AI Aspect</h4>
+            <p>Interactive web portal with data analytics dashboard, offline keyword AI chatbot, and fort hydraulic
+              models.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 14. FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <svg class="svg-icon" viewBox="0 0 24 24" fill="var(--orange-primary)" style="width: 22px; height: 22px;">
+          <path d="M4 2v20M4 4l16 4-16 4" />
+        </svg>
+        Maharashtra <span class="accent">• Maza Maharashtra</span>
+      </div>
+      <div class="footer-info">
+        <strong data-i18n="footer.event">Unity in Diversity 2026</strong> • State Assigned:
+        <strong>Maharashtra</strong><br>
+        Presented by the <strong data-i18n="footer.department">Department of Artificial Intelligence & Data
+          Science</strong><br>
+        <span data-i18n="footer.credit">Crafted with pride for the Inter-Departmental Cultural State Exhibition.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero" data-i18n="footer.top">Back to Top ↑</a>
+        <a href="#glance">Glance</a>
+        <a href="#food">Food Menu</a>
+        <a href="#engineering">AI Dashboard</a>
+        <a href="#quiz">Quiz</a>
+      </div>
+
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        &copy; 2026 Department of Artificial Intelligence & Data Science. All rights reserved. Jai Maharashtra!
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top" title="Back to top">
+    <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <!-- CHATBOT WIDGET (FLOATING) -->
+  <div class="chatbot-fab" id="chatbotFab" aria-label="Open Maharashtra AI Assistant" title="Ask Maharashtra Assistant">
+    <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+    </svg>
+  </div>
+
+  <div class="chatbot-panel" id="chatbotPanel" role="dialog" aria-label="Maharashtra Knowledge Assistant">
+    <div class="chatbot-header">
+      <h4>
+        <span class="status-dot"></span>
+        <span data-i18n="chatbot.header">Maharashtra AI Assistant</span>
+      </h4>
+      <button class="chatbot-close" id="chatbotClose" aria-label="Close Assistant">
+        <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="chat-message bot" data-i18n="chatbot.welcome">
+        Namaskar! I am your Maharashtra Guide. Ask me anything about our history, food, forts, state symbols, or stall!
+      </div>
+    </div>
+
+    <!-- Quick Suggestions Chips -->
+    <div class="suggestion-chips" id="suggestionChips">
+      <div class="chip" data-query="What is the state animal?">State Animal</div>
+      <div class="chip" data-query="What is on today's stall menu?">Stall Menu</div>
+      <div class="chip" data-query="Who was Chhatrapati Shivaji Maharaj?">Shivaji Maharaj</div>
+      <div class="chip" data-query="Tell me about Atal Setu">Atal Setu</div>
+      <div class="chip" data-query="Classical language status">Classical Language</div>
+    </div>
+
+    <div class="chatbot-input">
+      <input type="text" id="chatbotInput" placeholder="Ask a question..." data-i18n="chatbot.placeholder"
+        aria-label="Chatbot question input">
+      <button id="chatbotSend" aria-label="Send message">
+        <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="22" y1="2" x2="11" y2="13" />
+          <polygon points="22 2 15 22 11 13 2 9 22 2" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX OVERLAY -->
+  <div class="lightbox" id="galleryLightbox" role="dialog" aria-label="Photo Lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">
+      <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+    <img id="lightboxImg" src="" alt="Enlarged gallery view">
+  </div>
+
+  <!-- JAVASCRIPT MODULES -->
+  <script src="js/i18n.js?v=4"></script>
+  <script src="js/main.js?v=4"></script>
+  <script src="js/map.js?v=satellite-4"></script>
+  <script src="js/charts.js?v=4"></script>
+  <script src="js/quiz.js?v=4"></script>
+  <script src="js/chatbot.js?v=4"></script>
+
+  <!-- SERVICE WORKER REGISTRATION (OFFLINE SUPPORT) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => {
+            reg.update();
+            console.log('ServiceWorker registered with scope:', reg.scope);
+          })
+          .catch(err => console.log('ServiceWorker registration error:', err));
+      });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+[
+  {
+    "keywords": ["capital", "main capital"],
+    "question": "What is the capital of Maharashtra?",
+    "answer": "Mumbai is the official state capital and the financial capital of India."
+  },
+  {
+    "keywords": ["winter capital", "nagpur"],
+    "question": "What is the winter capital of Maharashtra?",
+    "answer": "Nagpur serves as Maharashtra's winter capital, hosting the annual winter session of the state legislature (Vidhan Sabha)."
+  },
+  {
+    "keywords": ["formed", "formation", "established", "founded", "date"],
+    "question": "When was Maharashtra formed?",
+    "answer": "Maharashtra was officially established on 1 May 1960 following the historic Samyukta Maharashtra Movement. May 1st is celebrated annually as Maharashtra Din."
+  },
+  {
+    "keywords": ["districts", "how many districts"],
+    "question": "How many districts are there in Maharashtra?",
+    "answer": "Maharashtra has 36 districts grouped into 6 administrative divisions: Konkan, Pune, Nashik, Chhatrapati Sambhajinagar, Amravati, and Nagpur."
+  },
+  {
+    "keywords": ["divisions", "administrative divisions", "regions"],
+    "question": "What are the administrative divisions of Maharashtra?",
+    "answer": "There are 6 administrative divisions: Konkan, Pune, Nashik, Chhatrapati Sambhajinagar, Amravati, and Nagpur; covering geographic zones like Konkan, Desh, Marathwada, Vidarbha, and Khandesh."
+  },
+  {
+    "keywords": ["state animal", "shekru", "squirrel"],
+    "question": "What is the state animal of Maharashtra?",
+    "answer": "The Indian Giant Squirrel (known locally as 'Shekru') is the state animal, famous for its reddish-brown fur and found prominently in Bhimashankar forests."
+  },
+  {
+    "keywords": ["state bird", "harial", "pigeon"],
+    "question": "What is the state bird of Maharashtra?",
+    "answer": "The Yellow-Footed Green Pigeon (known in Marathi as 'Harial') is the state bird."
+  },
+  {
+    "keywords": ["state tree", "mango", "hapus", "tree"],
+    "question": "What is the state tree of Maharashtra?",
+    "answer": "The Mango tree (Mangifera indica), celebrated for the world-renowned Konkan Alphonso (Hapus) mango, is the state tree."
+  },
+  {
+    "keywords": ["state flower", "jarul", "taman"],
+    "question": "What is the state flower of Maharashtra?",
+    "answer": "Jarul (also called Taman or Queen's Crape Myrtle / Pride of India) is the official state flower, blooming with vibrant purple blossoms."
+  },
+  {
+    "keywords": ["state butterfly", "blue mormon"],
+    "question": "What is the state butterfly of Maharashtra?",
+    "answer": "Maharashtra was the first state in India to declare a state butterfly: the magnificent Blue Mormon (Papilio polymnestor)."
+  },
+  {
+    "keywords": ["state song", "anthem", "jai jai maharashtra maza"],
+    "question": "What is the official state song of Maharashtra?",
+    "answer": "'Jai Jai Maharashtra Maza, Garja Maharashtra Maza', penned by Raja Badhe and popularized by Shahir Sable, was adopted as the official state anthem in 2023."
+  },
+  {
+    "keywords": ["population", "census", "people"],
+    "question": "What is the population of Maharashtra?",
+    "answer": "As per Census 2011, Maharashtra has a population of approx 11.24 crore (112 million), making it India's second most populous state."
+  },
+  {
+    "keywords": ["area", "size", "geography"],
+    "question": "What is the total geographical area of Maharashtra?",
+    "answer": "Maharashtra covers 307,713 sq km, making it the third-largest state in India by land area."
+  },
+  {
+    "keywords": ["rivers", "godavari", "krishna"],
+    "question": "What are the major rivers flowing through Maharashtra?",
+    "answer": "Key rivers include the Godavari (Dakshin Ganga), Krishna, Bhima, Tapi, Wardha, Wainganga, and Koyna."
+  },
+  {
+    "keywords": ["shivaji", "chhatrapati shivaji maharaj", "founder"],
+    "question": "Who was Chhatrapati Shivaji Maharaj?",
+    "answer": "Chhatrapati Shivaji Maharaj (1630–1680) was the legendary founder of the Maratha Empire, known for founding 'Hindavi Swarajya', guerrilla warfare tactics (Ganimi Kawa), progressive governance, and a formidable naval fleet."
+  },
+  {
+    "keywords": ["raigad", "capital of maratha", "coronation"],
+    "question": "What is the significance of Raigad Fort?",
+    "answer": "Raigad Fort was chosen by Shivaji Maharaj as the capital of the Maratha Empire. His coronation (Rajyabhishek) took place here on 6 June 1674."
+  },
+  {
+    "keywords": ["forts", "sinhagad", "pratapgad", "sea fort", "sindhudurg"],
+    "question": "Which are the prominent forts of Maharashtra?",
+    "answer": "Maharashtra has over 350 hill and sea forts, including Raigad, Sinhagad, Pratapgad, Shivneri, Rajgad, Sindhudurg, Murud-Janjira, and Panhala."
+  },
+  {
+    "keywords": ["classical language", "marathi", "language status"],
+    "question": "When was Marathi given Classical Language status?",
+    "answer": "The Government of India officially accorded Marathi the status of a Classical Language in October 2024, honoring its 2,000+ years of documented literary and linguistic heritage."
+  },
+  {
+    "keywords": ["dialects", "varhadi", "malvani", "ahirani"],
+    "question": "What dialects of Marathi are spoken across the state?",
+    "answer": "Major dialects include Varhadi (Vidarbha), Ahirani (Khandesh), Malvani/Konkani (coastal Konkan), and Deshi (Western Maharashtra)."
+  },
+  {
+    "keywords": ["phule", "jyotirao phule", "savitribai", "reformers"],
+    "question": "What was Mahatma Jyotirao and Savitribai Phule's contribution?",
+    "answer": "Mahatma Jyotirao Phule and Savitribai Phule were pioneering social reformers who started India's first school for girls in Pune in 1848, championed education for backward classes, and founded the Satyashodhak Samaj."
+  },
+  {
+    "keywords": ["ambedkar", "b r ambedkar", "constitution"],
+    "question": "What is Dr. B. R. Ambedkar's connection to Maharashtra?",
+    "answer": "Dr. Bhimrao Ramji Ambedkar, chief architect of the Indian Constitution, led revolutionary equality movements in Maharashtra, including the Mahad Satyagraha (1927) and the historic conversion to Buddhism at Deekshabhoomi, Nagpur (1956)."
+  },
+  {
+    "keywords": ["shahu maharaj", "kolhapur", "social justice"],
+    "question": "Who was Rajarshi Chhatrapati Shahu Maharaj?",
+    "answer": "Rajarshi Shahu Maharaj of Kolhapur was an enlightened visionary who instituted India's first 50% reservation for backward classes in 1902 and introduced free, compulsory primary education."
+  },
+  {
+    "keywords": ["tilak", "lokmanya tilak", "ganeshotsav"],
+    "question": "How did Lokmanya Tilak shape Maharashtra's culture?",
+    "answer": "Lokmanya Bal Gangadhar Tilak transformed traditional Ganesh Chaturthi and Shivjayanti into grand community festivals to foster solidarity and inspire the freedom struggle, coining the slogan 'Swaraj is my birthright'."
+  },
+  {
+    "keywords": ["saint poets", "dnyaneshwar", "tukaram", "abhang"],
+    "question": "Who are the revered saint poets of Maharashtra?",
+    "answer": "The Varkari tradition was illuminated by Sant Dnyaneshwar (author of Dnyaneshwari), Sant Tukaram, Sant Namdev, Sant Eknath, and Sant Janabai, who composed divine Abhangas preaching equality and devotion."
+  },
+  {
+    "keywords": ["wari", "pandharpur", "warkari"],
+    "question": "What is the Pandharpur Wari?",
+    "answer": "The Pandharpur Wari is an 800-year-old pilgrimage where hundreds of thousands of warkaris walk 250 km singing devotional abhangs to reach the Vithoba Temple on Ashadhi Ekadashi."
+  },
+  {
+    "keywords": ["ganesh chaturthi", "ganpati", "lalbaugcha raja"],
+    "question": "How is Ganesh Chaturthi celebrated in Maharashtra?",
+    "answer": "Ganesh Chaturthi is the biggest festival in Maharashtra, lasting 10 days with massive pandals (like Lalbaugcha Raja in Mumbai and Dagdusheth in Pune), energetic Dhol-Tasha pathaks, and immersion on Anant Chaturdashi."
+  },
+  {
+    "keywords": ["gudi padwa", "new year"],
+    "question": "What is Gudi Padwa?",
+    "answer": "Gudi Padwa marks the traditional Marathi New Year (Chaitra Shukla Pratipada), celebrated by hoisting a decorated 'Gudi' outside homes to symbolize victory, prosperity, and the onset of spring."
+  },
+  {
+    "keywords": ["lavani", "dance", "folk dance"],
+    "question": "What is Lavani?",
+    "answer": "Lavani is Maharashtra's iconic traditional folk dance known for fast rhythmic footwork, live Dholki beats, expressive storytelling, and dancers dressed in nine-yard Nauvari sarees."
+  },
+  {
+    "keywords": ["dhol tasha", "lezim", "folk arts"],
+    "question": "What are Dhol-Tasha and Lezim?",
+    "answer": "Dhol-Tasha is a thunderous percussion ensemble featuring synchronized dhols, tashas, and flags. Lezim is a high-energy traditional calisthenic folk dance performed with metallic jingles during festive processions."
+  },
+  {
+    "keywords": ["powada", "shahir", "ballad"],
+    "question": "What is a Powada?",
+    "answer": "A Powada is a heroic ballad performed by a Shahir with a Daf instrument, celebrating the bravery, battles, and ideals of Chhatrapati Shivaji Maharaj and other legendary warriors."
+  },
+  {
+    "keywords": ["warli", "warli painting", "art"],
+    "question": "What is Warli art?",
+    "answer": "Warli painting is an ancient indigenous tribal art form from northern Maharashtra, using simple geometric shapes (circles, triangles, and lines) drawn with white rice paste on mud walls to portray village life and harvest celebrations."
+  },
+  {
+    "keywords": ["paithani", "saree", "nauvari", "dress"],
+    "question": "What are Paithani and Nauvari sarees?",
+    "answer": "Paithani is a luxurious hand-woven silk saree from Paithan known for its rich gold zari border and peacock motifs. Nauvari (Kashta) is the traditional nine-yard saree worn by Maharashtrian women with grace and mobility."
+  },
+  {
+    "keywords": ["kolhapuri chappal", "leather craft"],
+    "question": "What is a Kolhapuri Chappal?",
+    "answer": "Kolhapuri Chappals are handcrafted, GI-tagged vegetable-tanned leather sandals originating from Kolhapur, renowned for their intricate braiding and lifelong durability."
+  },
+  {
+    "keywords": ["vada pav", "street food", "burger"],
+    "question": "What is Vada Pav?",
+    "answer": "Vada Pav, affectionately called the 'Bombay Burger', consists of a spiced deep-fried potato fritter (batata vada) nestled inside a soft pav, served with spicy garlic chutney, mint-coriander chutney, and fried green chillies."
+  },
+  {
+    "keywords": ["misal pav", "puneri misal", "kolhapuri misal"],
+    "question": "What is Misal Pav?",
+    "answer": "Misal Pav is a hearty Maharashtrian dish made from sprouted moth beans curry (usal), topped with spicy 'kat' or 'rassa', crispy farsan, fresh chopped onions, and lemon, eaten with toasted butter pav."
+  },
+  {
+    "keywords": ["puran poli", "sweet", "festive"],
+    "question": "What is Puran Poli?",
+    "answer": "Puran Poli is a classic Maharashtrian sweet flatbread stuffed with a sweet mixture of chana dal, jaggery, cardamom, and nutmeg, served hot with generous amounts of pure ghee (toop) or milk/katachi amti."
+  },
+  {
+    "keywords": ["modak", "ukadiche modak"],
+    "question": "What is Ukadiche Modak?",
+    "answer": "Ukadiche Modak is a steamed sweet dumpling made from rice flour dough filled with freshly grated coconut, jaggery, cardamom, and nutmeg, considered Lord Ganesha's favorite sweet."
+  },
+  {
+    "keywords": ["pithla bhakri", "rural food"],
+    "question": "What is Pithla Bhakri?",
+    "answer": "Pithla Bhakri is the soul food of rural Maharashtra, featuring a thick, spiced gram-flour (besan) curry paired with hot jowar or bajra bhakri (unleavened flatbread), raw onion, and fiery thecha."
+  },
+  {
+    "keywords": ["solkadhi", "konkan drink"],
+    "question": "What is Solkadhi?",
+    "answer": "Solkadhi is a refreshing pink Konkani appetizer and digestive drink prepared from fresh coconut milk and tangy kokum extract, tempered with garlic, green chillies, and cumin."
+  },
+  {
+    "keywords": ["tambda pandhra rassa", "kolhapuri rassa"],
+    "question": "What is Kolhapuri Tambda and Pandhra Rassa?",
+    "answer": "Kolhapur's iconic meat gravies: 'Tambda Rassa' is a fiery red chili-based bone broth, while 'Pandhra Rassa' is a soothing, fragrant white broth simmered with coconut milk and whole aromatic spices."
+  },
+  {
+    "keywords": ["ajanta", "ellora", "unesco", "caves"],
+    "question": "What are Ajanta and Ellora Caves?",
+    "answer": "Ajanta Caves (famous for Buddhist murals dating to the 2nd century BCE) and Ellora Caves (featuring the single-rock monolithic Kailash Temple) are UNESCO World Heritage Sites located in Chhatrapati Sambhajinagar district."
+  },
+  {
+    "keywords": ["lonar crater", "meteorite lake", "buldhana"],
+    "question": "What makes Lonar Lake unique?",
+    "answer": "Lonar Crater in Buldhana is the world's only hyper-velocity impact crater formed in basaltic rock by a meteorite collision over 52,000 years ago, resulting in a saline-alkaline closed eco-lake."
+  },
+  {
+    "keywords": ["ashtavinayak", "ganesha temples"],
+    "question": "What is the Ashtavinayak pilgrimage?",
+    "answer": "Ashtavinayak refers to the pilgrimage circuit of 8 self-manifested (Swayambhu) Lord Ganesha temples situated around Pune, Raigad, and Ahmednagar districts."
+  },
+  {
+    "keywords": ["jyotirlinga", "shiva temples"],
+    "question": "How many Jyotirlingas are in Maharashtra?",
+    "answer": "Maharashtra houses 5 of India's 12 sacred Jyotirlingas: Trimbakeshwar (Nashik), Bhimashankar (Pune), Grishneshwar (Ellora), Aundha Nagnath (Hingoli), and Parli Vaijnath (Beed)."
+  },
+  {
+    "keywords": ["financial capital", "economy", "bse", "rbi"],
+    "question": "Why is Mumbai called the Financial Capital of India?",
+    "answer": "Mumbai is home to the Bombay Stock Exchange (BSE, Asia's oldest), National Stock Exchange (NSE), the Reserve Bank of India (RBI), SEBI, headquarters of top corporations, and the Bollywood film industry."
+  },
+  {
+    "keywords": ["atal setu", "mthl", "sea bridge"],
+    "question": "What is Atal Setu (MTHL)?",
+    "answer": "Atal Setu (Mumbai Trans Harbour Link) is a 21.8 km long 6-lane access-controlled sea bridge connecting Sewri (South Mumbai) to Chirle (Navi Mumbai), reducing travel time from 2 hours to just 20 minutes."
+  },
+  {
+    "keywords": ["samruddhi mahamarg", "expressway", "highway"],
+    "question": "What is Samruddhi Mahamarg?",
+    "answer": "Hindu Hrudaysamrat Balasaheb Thackeray Maharashtra Samruddhi Mahamarg is a 701-km access-controlled super communication expressway connecting Mumbai and Nagpur across 10 districts."
+  },
+  {
+    "keywords": ["water management", "fort engineering", "rainwater"],
+    "question": "What engineering feats did Maratha hill forts have?",
+    "answer": "Maratha forts like Raigad and Sinhagad implemented ingenious rock-cut tank systems (Taake), catchment slopes, contour filtration, and continuous water reservoirs allowing year-round survival under prolonged sieges."
+  },
+  {
+    "keywords": ["tadoba", "wildlife", "tiger reserve"],
+    "question": "Which is the oldest and largest tiger reserve in Maharashtra?",
+    "answer": "Tadoba Andhari Tiger Reserve in Chandrapur district is Maharashtra's oldest and premier national park, home to one of India's highest densities of Bengal tigers."
+  },
+  {
+    "keywords": ["sachin tendulkar", "sports", "cricket"],
+    "question": "Who is Maharashtra's most celebrated cricketer?",
+    "answer": "Bharat Ratna Sachin Tendulkar, born in Mumbai, is universally known as the 'God of Cricket', with 100 international centuries and over 34,000 runs in international cricket."
+  },
+  {
+    "keywords": ["stall", "today stall", "department", "our stall", "aids"],
+    "question": "What is showcased at our stall today?",
+    "answer": "Our AI&DS TE stall features authentic Maharashtrian cuisine (Ukadiche Modak, Puran Poli, Vada Pav), traditional artifacts (Warli paintings, Kolhapuri Chappals, Paithani, Tutari), students in traditional Nauvari and Pheta attire, an engineering display, and this live web portal!"
+  },
+  {
+    "keywords": ["team", "who built this", "creators"],
+    "question": "Who created this website?",
+    "answer": "This website was developed by the third-year students of the Artificial Intelligence & Data Science (AI&DS TE) Department for the college cultural competition 'Unity in Diversity 2026'."
+  }
+]

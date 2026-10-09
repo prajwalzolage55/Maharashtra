@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "title": "Maharashtra",
+    "dept": "AI & Data Science",
+    "overview": "Overview",
+    "history": "History",
+    "people": "People",
+    "culture": "Culture",
+    "food": "Cuisine",
+    "tourism": "Tourism",
+    "economy": "Economy",
+    "engineering": "Engineering & AI",
+    "quiz": "Quiz",
+    "stall": "Our Stall"
+  },
+  "hero": {
+    "badge": "Unity in Diversity 2026 • AI & Data Science Department",
+    "titlePrefix": "Maharashtra",
+    "titleHighlight": "Maza Maharashtra",
+    "tagline": "Jai Maharashtra — Land of Forts, Saints, Revolutionaries, and Limitless Modern Innovation",
+    "portraitTitle": "Chhatrapati Shivaji Maharaj",
+    "portraitSubtitle": "Founder of Hindavi Swarajya (1630–1680)",
+    "statFormation": "Formed 1 May 1960",
+    "statCapital": "Capital: Mumbai",
+    "statWinterCapital": "Winter Capital: Nagpur",
+    "statDistricts": "36 Districts",
+    "statPopulation": "11.2+ Crore Population",
+    "exploreBtn": "Explore Maharashtra",
+    "stallBtn": "Visit Our Stall",
+    "quizBtn": "Play State Quiz"
+  },
+  "glance": {
+    "title": "Maharashtra at a Glance",
+    "subtitle": "Geographic grandeur, administrative hubs, and iconic natural symbols defining the powerhouse state of India.",
+    "capital": "Capital",
+    "capitalVal": "Mumbai (Financial Hub)",
+    "winterCapital": "Winter Capital",
+    "winterCapitalVal": "Nagpur",
+    "formation": "Formation Day",
+    "formationVal": "1 May 1960",
+    "area": "Geographic Area",
+    "areaVal": "307,713 sq km (3rd in India)",
+    "population": "Population",
+    "populationVal": "11.24 Crore (Census 2011)",
+    "districts": "Districts & Divisions",
+    "districtsVal": "36 Districts • 6 Divisions",
+    "symbolsTitle": "Official State Symbols",
+    "symbolAnimal": "State Animal",
+    "symbolAnimalName": "Shekru (Indian Giant Squirrel)",
+    "symbolBird": "State Bird",
+    "symbolBirdName": "Harial (Yellow-Footed Green Pigeon)",
+    "symbolTree": "State Tree",
+    "symbolTreeName": "Mango (Hapus / Alphonso)",
+    "symbolFlower": "State Flower",
+    "symbolFlowerName": "Jarul (Taman)",
+    "mapTitle": "Real Satellite Imagery & Regional Cartography",
+    "mapInstruction": "Explore authentic high-resolution satellite imagery. Zoom into the Sahyadri mountains, coastline, and rivers, or select regions below:",
+    "riversTitle": "Rivers & Western Ghats (Sahyadri)",
+    "riversDesc": "The mighty Western Ghats run along the coast, nurturing lifeline rivers including Godavari, Krishna, Bhima, Tapi, Koyna, and Wainganga."
+  },
+  "history": {
+    "title": "Glorious Historical Odyssey",
+    "subtitle": "From ancient cave excavations and Maratha Swarajya to the Indian Independence Struggle and statehood.",
+    "fortsTitle": "Legendary Maratha Forts",
+    "fortsSubtitle": "Ingenious military hill and sea bastions engineered for Swarajya by Chhatrapati Shivaji Maharaj."
+  },
+  "people": {
+    "title": "People, Reformers & Society",
+    "subtitle": "A society nurtured by monumental social reforms, egalitarian philosophy, and vibrant cultural communities.",
+    "reformersTitle": "Pioneering Social Reformers",
+    "communitiesTitle": "Diverse Communities & Tribes",
+    "valuesTitle": "Core Values & Maharashtra Dharma",
+    "valuesDesc": "Hospitality (Atithi Devo Bhava), simplicity, resilience, and the progressive ethos of Maharashtra Dharma that honors social equality and brotherhood."
+  },
+  "language": {
+    "title": "Language & Literature",
+    "subtitle": "Celebrated in October 2024 as a Classical Language of India, with 2,000+ years of vibrant prose, poetry, and theatre.",
+    "badge": "Classical Language Status Conferred (2024)",
+    "dialectsTitle": "Rich Regional Dialects",
+    "dialectsDesc": "From Varhadi in Vidarbha, Ahirani in Khandesh, to Malvani along the coastal stretch and Deshi across the plateau.",
+    "flipCardsTitle": "Learn 10 Common Marathi Phrases (Click to Flip)",
+    "saintsTitle": "Saint Poets & Varkari Literature",
+    "authorsTitle": "Modern Literary Icons"
+  },
+  "culture": {
+    "title": "Culture & Living Traditions",
+    "subtitle": "Experience high-energy festivals, rhythmic folk dances, timeless attire, and master artisan crafts.",
+    "tabFestivals": "Festivals",
+    "tabDress": "Traditional Dress",
+    "tabFolkArts": "Folk Arts",
+    "tabMusic": "Music & Instruments",
+    "tabRituals": "Rituals & Customs"
+  },
+  "food": {
+    "title": "Maharashtrian Cuisine",
+    "subtitle": "From coastal coconut curries to spicy Vidarbha gravies and beloved Mumbai street delicacies.",
+    "stallMenuTitle": "Today's Live Stall Menu • AI & Data Science",
+    "stallMenuDesc": "Served fresh at our stall today! Come taste authentic Maharashtra flavors:",
+    "regionalTitle": "Regional Flavors",
+    "streetFoodTitle": "Celebrated Street Foods"
+  },
+  "tourism": {
+    "title": "Destinations & World Heritage",
+    "subtitle": "Discover misty Sahyadri hill stations, golden beaches, UNESCO World Heritage monuments, and sacred pilgrimage shrines.",
+    "filterAll": "All Destinations",
+    "filterHeritage": "Heritage & Caves",
+    "filterHills": "Hill Stations",
+    "filterBeaches": "Coastal Beaches",
+    "filterPilgrimage": "Pilgrimage",
+    "filterWildlife": "Wildlife Reserves"
+  },
+  "economy": {
+    "title": "Economy, Industry & Megaprojects",
+    "subtitle": "India's undisputed economic growth engine contributing ~14% to the national GDP.",
+    "statGdp": "~14%",
+    "statGdpDesc": "Contribution to India's National GDP",
+    "statFdi": "#1",
+    "statFdiDesc": "Highest Foreign Direct Investment Destination",
+    "statPorts": "JNPT",
+    "statPortsDesc": "Premier Container Port of India",
+    "statAgri": "Top Producer",
+    "statAgriDesc": "Leader in Sugarcane, Onions, Cotton & Alphonso Mangoes",
+    "infraTitle": "Next-Gen Infrastructure Marvels",
+    "educationTitle": "Centers of Higher Learning & Research"
+  },
+  "personalities": {
+    "title": "Renowned Personalities",
+    "subtitle": "Great visionaries, rulers, scientists, artists, and athletes who shaped the state and the nation.",
+    "filterAll": "All Luminaries",
+    "filterRulers": "Rulers & Leaders",
+    "filterReformers": "Social Reformers",
+    "filterArts": "Arts & Literature",
+    "filterSports": "Sports Champions",
+    "filterScience": "Science & Industry"
+  },
+  "engineering": {
+    "title": "Engineering Marvels & AI Corner",
+    "subtitle": "Connecting ancient rock-cut hydraulics and fort engineering with modern AI and data analytics.",
+    "techBadge": "Built with HTML5, CSS3, Modern JS, Leaflet & Chart.js",
+    "chart1Title": "Population Share by Division",
+    "chart2Title": "Major Agricultural Production (Lakh MT)",
+    "chart3Title": "State Festival Calendar Distribution",
+    "chart4Title": "Sectoral GDP Contribution (%)"
+  },
+  "quiz": {
+    "title": "Maharashtra Challenge Quiz",
+    "subtitle": "Test your knowledge about Maharashtra's heritage, culture, geography, and heroes!",
+    "startBtn": "Start 10-Question Quiz",
+    "nextBtn": "Next Question",
+    "finishBtn": "See Final Results",
+    "restartBtn": "Play Again",
+    "scoreOutOf": "Your Score"
+  },
+  "chatbot": {
+    "header": "Maharashtra AI Assistant",
+    "welcome": "Namaskar! I am your Maharashtra Guide. Ask me anything about our history, food, forts, state symbols, or stall!",
+    "placeholder": "Ask e.g. What is the state animal? or Stall menu...",
+    "send": "Send"
+  },
+  "stall": {
+    "title": "Our Competition Stall",
+    "subtitle": "Department of Artificial Intelligence & Data Science • Unity in Diversity 2026",
+    "stallBannerTitle": "Welcome to Stall #Maharashtra",
+    "stallBannerDesc": "Visit our vibrant exhibition booth for authentic food tasting, traditional attire photo-ops, live tech demonstrations, and interactive cultural displays!",
+    "galleryTitle": "Stall & Cultural Showcase",
+    "teamTitle": "Department Project Team"
+  },
+  "footer": {
+    "event": "Unity in Diversity 2026",
+    "department": "Department of Artificial Intelligence & Data Science",
+    "credit": "Crafted with pride for the Inter-Departmental Cultural State Exhibition.",
+    "top": "Back to Top"
+  }
+}

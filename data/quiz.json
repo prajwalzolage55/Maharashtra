@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "question": "When was the state of Maharashtra officially formed?",
+    "options": ["15 August 1947", "1 May 1960", "26 January 1950", "1 November 1956"],
+    "answer": 1,
+    "explanation": "Maharashtra was formed on 1 May 1960 following the Samyukta Maharashtra Movement, dividing Bombay State into Maharashtra and Gujarat."
+  },
+  {
+    "id": 2,
+    "question": "Which animal is the official State Animal of Maharashtra?",
+    "options": ["Royal Bengal Tiger", "Indian Giant Squirrel (Shekru)", "Indian Leopard", "Blackbuck"],
+    "answer": 1,
+    "explanation": "Shekru (Indian Giant Squirrel), commonly found in the Bhimashankar Wildlife Sanctuary, is the state animal."
+  },
+  {
+    "id": 3,
+    "question": "Which city serves as the Winter Capital of Maharashtra?",
+    "options": ["Pune", "Nashik", "Nagpur", "Chhatrapati Sambhajinagar"],
+    "answer": 2,
+    "explanation": "Nagpur is the winter capital of Maharashtra, where the winter session of the state legislature is held."
+  },
+  {
+    "id": 4,
+    "question": "Which fort was crowned as the capital of the Maratha Empire under Chhatrapati Shivaji Maharaj in 1674?",
+    "options": ["Sinhagad", "Raigad", "Pratapgad", "Shivneri"],
+    "answer": 1,
+    "explanation": "Raigad Fort was chosen by Chhatrapati Shivaji Maharaj as the capital of the Maratha Empire for his coronation in 1674."
+  },
+  {
+    "id": 5,
+    "question": "In which year was Marathi officially conferred the status of a Classical Language by the Government of India?",
+    "options": ["2014", "2019", "2024", "2022"],
+    "answer": 2,
+    "explanation": "Marathi was officially declared a Classical Language by the Union Cabinet in October 2024, honoring its ancient literary heritage."
+  },
+  {
+    "id": 6,
+    "question": "Which sweet delicacy is traditionally prepared during Ganesh Chaturthi in Maharashtra?",
+    "options": ["Puran Poli", "Ukadiche Modak", "Shrikhand", "Bakarwadi"],
+    "answer": 1,
+    "explanation": "Ukadiche Modak, a steamed rice-flour dumpling stuffed with fresh grated coconut and jaggery, is Lord Ganesha's favorite prasadam."
+  },
+  {
+    "id": 7,
+    "question": "Which ancient rock-cut cave monument in Maharashtra is famous for its Kailash Temple carved from a single basalt rock?",
+    "options": ["Ajanta Caves", "Elephanta Caves", "Ellora Caves", "Karla Caves"],
+    "answer": 2,
+    "explanation": "Cave 16 at Ellora, the Kailash Temple, is the world's largest monolithic rock excavation, carved top-to-bottom from a single cliff."
+  },
+  {
+    "id": 8,
+    "question": "Which region of Maharashtra is globally renowned for fiery 'Saoji' cuisine?",
+    "options": ["Konkan", "Vidarbha (Nagpur)", "Khandesh", "Marathwada"],
+    "answer": 1,
+    "explanation": "Saoji cuisine originates from the Halba Koshti community in Vidarbha, particularly around Nagpur, known for its distinct spicy masala."
+  },
+  {
+    "id": 9,
+    "question": "What is the official State Tree of Maharashtra?",
+    "options": ["Banyan", "Mango (Aam)", "Peepal", "Neem"],
+    "answer": 1,
+    "explanation": "The Mango tree (Mangifera indica), celebrated for the world-famous Alphonso (Hapus) variety from the Konkan coast, is the state tree."
+  },
+  {
+    "id": 10,
+    "question": "Who started the public celebration of Ganeshotsav and Shivjayanti to unite people during India's freedom movement?",
+    "options": ["Mahatma Jyotirao Phule", "Lokmanya Bal Gangadhar Tilak", "Gopal Krishna Gokhale", "Dr. B. R. Ambedkar"],
+    "answer": 1,
+    "explanation": "Lokmanya Tilak transformed domestic Ganesh puja into a vibrant public festival in 1893 to build national solidarity against colonial rule."
+  },
+  {
+    "id": 11,
+    "question": "What is India's longest sea bridge, connecting Sewri in Mumbai to Chirle in Navi Mumbai?",
+    "options": ["Bandra-Worli Sea Link", "Atal Setu (MTHL)", "Vashi Bridge", "Airoli Bridge"],
+    "answer": 1,
+    "explanation": "Atal Bihari Vajpayee Sewri-Nhava Sheva Atal Setu (MTHL) spans 21.8 km, serving as a modern engineering marvel inaugurated in 2024."
+  },
+  {
+    "id": 12,
+    "question": "The annual 800-year-old pilgrimage of warkaris walking to the Vitthal Temple in Pandharpur is known as:",
+    "options": ["Pandharpur Wari", "Gondhal", "Kumbh Mela", "Mangalagaur"],
+    "answer": 0,
+    "explanation": "The Pandharpur Wari is a revered 21-day walking pilgrimage honoring Sant Dnyaneshwar and Sant Tukaram on Ashadhi Ekadashi."
+  },
+  {
+    "id": 13,
+    "question": "Who was India's first female teacher, who pioneered girls' education at Bhide Wada, Pune in 1848?",
+    "options": ["Tarabai Shinde", "Savitribai Phule", "Anandibai Joshi", "Pandita Ramabai"],
+    "answer": 1,
+    "explanation": "Krantijyoti Savitribai Phule, alongside her husband Jyotirao Phule, founded India's first school for girls run by Indians in 1848."
+  },
+  {
+    "id": 14,
+    "question": "Which district of Maharashtra is famous as the 'Wine Capital of India'?",
+    "options": ["Pune", "Solapur", "Nashik", "Kolhapur"],
+    "answer": 2,
+    "explanation": "Nashik produces over 80% of India's wine thanks to its favorable elevation, climate, and vast vineyards."
+  }
+]

@@ -4,7 +4,7 @@
  * Department of Artificial Intelligence & Data Science
  */
 
-const CACHE_NAME = 'maharashtra-2026-v10';
+const CACHE_NAME = 'maharashtra-2026-v11';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
